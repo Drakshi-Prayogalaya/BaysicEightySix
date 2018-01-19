@@ -1,0 +1,3870 @@
+<resources>
+    <string name="app_name">Basic 8086</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="programs">Programs</string>
+    <string name="instruction_set">Instruction Set</string>
+    <string name="instruction">Instruction</string>
+    <string name="action_settings">Settings</string>
+    <string name="pin_list">IO pins of 8086</string>
+    <string name="pin_description">Pin Description</string>
+
+    <string-array name="list_array">
+        <item>AAA
+</item>
+<item>AAD
+</item>
+<item>AAM
+</item>
+<item>AAS
+</item>
+<item>ADC/ADD
+</item>
+<item>AND/OR/NOT/XOR
+</item>
+<item>CALL
+</item>
+<item>CBW/CWD
+</item>
+<item>CLC/STC
+</item>
+<item>CLD/STD
+</item>
+<item>CLI/STI
+</item>
+<item>CMC
+</item>
+<item>CMP
+</item>
+<item>CMPS/CMPSB/CMPSW
+</item>
+<item>DAA
+</item>
+<item>DAS
+</item>
+<item>DIV/IDIV
+</item>
+<item>ESC
+</item>
+<item>HLT
+</item>
+<item>IN/OUT
+</item>
+<item>INC/DEC
+</item>
+<item>INT/INTO
+</item>
+<item>IRET
+</item>
+<item>Jumps
+</item>
+<item>LAHF/SAHF
+</item>
+<item>LDS/LES
+</item>
+<item>LEA
+</item>
+<item>LOCK
+</item>
+<item>LODS/LODSB/LODSW
+</item>
+<item>Loops
+</item>
+<item>MOV
+</item>
+<item>MOVS/MOVSB/MOVSW
+</item>
+<item>MUL/IMUL
+</item>
+<item>NEG
+</item>
+<item>NOP
+</item>
+<item>POP/POPF
+</item>
+<item>PUSH/PUSHF
+</item>
+<item>RCL/RCR
+</item>
+<item>REPs
+</item>
+<item>RET/RETF
+</item>
+<item>ROL/ROR
+</item>
+<item>SAL/SHL
+</item>
+<item>SAR/SHR
+</item>
+<item>SCAS/SCASB/SCASW
+</item>
+<item>STOS/STOSB/STOSW
+</item>
+<item>SUB/SBB
+</item>
+<item>TEST/WAIT
+</item>
+<item>XCHG
+</item>
+        <item>XLAT/XLATB</item>
+    </string-array>
+
+    <string-array name="instructions_array">
+        <item>AAA</item>
+        <item>AAD</item>
+        <item>AAM</item>
+        <item>AAS</item>
+        <item>ADC</item>
+        <item>ADD</item>
+        <item>AND</item>
+        <item>OR</item>
+        <item>NOT</item>
+        <item>XOR</item>
+        <item>CALL</item>
+        <item>CBW</item>
+        <item>CWD</item>
+        <item>CLC</item>
+        <item>STC</item>
+        <item>CLD</item>
+        <item>STD</item>
+        <item>CLI</item>
+        <item>STI</item>
+        <item>CMC</item>
+        <item>CMP</item>
+        <item>CMPS</item>
+        <item>CMPSB</item>
+        <item>CMPSW</item>
+        <item>DAA</item>
+        <item>DAS</item>
+        <item>DIV</item>
+        <item>IDIV</item>
+        <item>ESC</item>
+        <item>HLT</item>
+        <item>IN </item>
+        <item>OUT</item>
+        <item>INC</item>
+        <item>DEC</item>
+        <item>INT</item>
+        <item>INTO</item>
+        <item>IRET</item>
+        <item>JA</item>
+        <item>JAE</item>
+        <item>JB</item>
+        <item>JBE</item>
+        <item>JC</item>
+        <item>JCXZ</item>
+        <item>JE</item>
+        <item>JG</item>
+        <item>JGE</item>
+        <item>JL </item>
+        <item>JLE</item>
+        <item>JMP</item>
+        <item>JNA</item>
+        <item>JPO</item>
+        <item>JZ</item>
+        <item>JS</item>
+        <item>JNAE</item>
+        <item>JNB</item>
+        <item>JNBE</item>
+        <item>JNC</item>
+        <item>JNE</item>
+        <item>JNG</item>
+        <item>JNGE</item>
+        <item>JNL</item>
+        <item>JNLE</item>
+        <item>JNO</item>
+        <item>JNP</item>
+        <item>JNS</item>
+        <item>JNZ</item>
+        <item>JO</item>
+        <item>JP</item>
+        <item>JPE</item>
+        <item>LAHF</item>
+        <item>SAHF</item>
+        <item>LDS</item>
+        <item>LES</item>
+        <item>LEA</item>
+        <item>LOCK</item>
+        <item>LODS</item>
+        <item>LODSB</item>
+        <item>LODSW</item>
+        <item>LOOP</item>
+        <item>LOOPNE</item>
+        <item>LOOPE</item>
+        <item>LOOPNZ</item>
+        <item>LOOPZ</item>
+        <item>MOV</item>
+        <item>MOVS</item>
+        <item>MOVSB</item>
+        <item>MOVSW</item>
+        <item>MUL</item>
+        <item>IMUL</item>
+        <item>NEG</item>
+        <item>NOP</item>
+        <item>POP</item>
+        <item>POPF</item>
+        <item>PUSH</item>
+        <item>PUSHF</item>
+        <item>RCL</item>
+        <item>RCR</item>
+        <item>REP</item>
+        <item>REPE</item>
+        <item>REPNZ</item>
+        <item>REPNE</item>
+        <item>RET</item>
+        <item>RETF</item>
+        <item>ROL</item>
+        <item>ROR</item>
+        <item>SAL</item>
+        <item>SHL</item>
+        <item>SAR</item>
+        <item>SHR</item>
+        <item>SCAS</item>
+        <item>SCASB</item>
+        <item>SCASW</item>
+        <item>STOS</item>
+        <item>STOSB</item>
+        <item>STOSW</item>
+        <item>SUB</item>
+        <item>SBB</item>
+        <item>TEST</item>
+        <item>WAIT</item>
+        <item>XCHG</item>
+        <item>XLAT</item>
+        <item>XLATB</item>
+
+    </string-array>
+
+    <string name="aaa">"ASCII Adjust after Addition
+
+ Corrects result in AH and AL after addition when working with BCD values.
+
+ Operands : NIL
+
+ It works according to the following Algorithm:
+ if lower nibble of AL > 9 or AF = 1 then :
+ \u0009\u0009\u0009*\u0009\u0009\u0009AL = AL + 6
+ \u0009\u0009\u0009*\u0009\u0009\u0009AH = AH + 1
+ \u0009\u0009\u0009*\u0009\u0009\u0009AF = 1
+ \u0009\u0009\u0009*\u0009\u0009\u0009CF = 1
+ else :
+ \u0009\u0009\u0009*\u0009\u0009\u0009AF = 0
+ \u0009\u0009\u0009*\u0009\u0009\u0009CF = 0
+ in both cases :
+ clear the higher nibble of AL.
+
+ Example:
+ MOV AX, 15\u0009\u0009\u0009; AH = 00, AL = 0F
+ AAA \u0009\u0009\u0009\u0009\u0009\u0009\u0009 ; AH = 01, AL = 05
+ RET"</string>
+
+    <string name="aad">"ASCII Adjust before Division.
+
+Prepares two BCD values for division.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = (AH * 10) + AL
+\u0009\u0009\u0009*\u0009\u0009\u0009AH = 0
+
+Example:
+MOV AX, 0105h \u0009\u0009\u0009 ; AH = 01, AL = 05
+AAD \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009; AH = 00, AL = 0Fh (15)
+RET"</string>
+
+    <string name="aam">"ASCII Adjust after Multiplication.
+
+Corrects the result of multiplication of two BCD values.
+
+OPerands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009AH = AL / 10
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = remainder
+
+Example:
+MOV AL, 15 \u0009\u0009\u0009; AL = 0Fh
+AAM \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009; AH = 01, AL = 05
+RET"</string>
+
+    <string name="aas">"ASCII Adjust after Subtraction.
+
+Corrects result in AH and AL after subtraction when working with BCD values.
+
+Operands : NIL
+
+Algorithm:
+if low nibble of AL > 9 or AF = 1 then :
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = AL - 6
+\u0009\u0009\u0009*\u0009\u0009\u0009AH = AH - 1
+\u0009\u0009\u0009*\u0009\u0009\u0009AF = 1
+\u0009\u0009\u0009*\u0009\u0009\u0009CF = 1
+else :
+\u0009\u0009\u0009*\u0009\u0009\u0009AF = 0
+\u0009\u0009\u0009*\u0009\u0009\u0009CF = 0
+in both cases :
+clear the high nibble of AL.
+
+Example:
+MOV AX, 02FFh \u0009\u0009\u0009 ; AH = 02, AL = 0FFh
+AAS \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009; AH = 01, AL = 09
+RET"</string>
+
+
+    <string name="adc">"ADC(Add with Carry)
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+Algorithm :
+operand1 = operand1 + operand2 + CF
+
+Example:
+STC \u0009\u0009\u0009\u0009\u0009 ; set CF = 1
+MOV AL, 5 \u0009\u0009\u0009; AL = 5
+ADC AL, 1 \u0009\u0009\u0009; AL = 7
+RET
+
+_________________________________________
+ADD
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+Algorithm:
+operand1 = operand1 + operand2
+
+Example:
+MOV AL, 5 \u0009\u0009\u0009\u0009\u0009; AL = 5
+ADD AL, -3 \u0009\u0009\u0009\u0009\u0009; AL = 2
+RET"</string>
+
+
+    <string name="and">"AND
+
+Logical AND between all bits of two operands. Result is stored in operand1.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+These rules apply:
+1 AND 1 = 1
+1 AND 0 = 0
+0 AND 1 = 0
+0 AND 0 = 0
+
+Example:
+MOV AL, 'a' \u0009\u0009\u0009\u0009\u0009\u0009\u0009; AL = 01100001b
+AND AL, 11011111b \u0009\u0009\u0009; AL = 01000001b ('A')
+RET
+
+________________________________________
+
+OR
+
+Logical OR between all bits of two operands. Result is stored in first operand.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+These rules apply:
+1 OR 1 = 1
+1 OR 0 = 1
+0 OR 1 = 1
+0 OR 0 = 0
+
+Example:
+MOV AL, 'A' \u0009\u0009\u0009\u0009\u0009\u0009\u0009; AL = 01000001b
+OR AL, 00100000b \u0009\u0009\u0009; AL = 01100001b ('a')
+RET
+
+________________________________________
+
+NOT
+
+Invert each bit of the operand.
+
+Operands :
+REG
+memory
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009if bit is 1 turn it to 0.
+\u0009\u0009\u0009*\u0009\u0009\u0009if bit is 0 turn it to 1.
+
+Example:
+MOV AL, 00011011b
+NOT AL \u0009\u0009\u0009\u0009; AL = 11100100b
+RET
+
+________________________________________
+
+XOR
+
+Logical XOR (Exclusive OR) between all bits of two operands. Result is stored in first operand.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+These rules apply:
+1 XOR 1 = 0
+1 XOR 0 = 1
+0 XOR 1 = 1
+0 XOR 0 = 0
+
+Example:
+MOV AL, 00000111b
+XOR AL, 00000010b \u0009\u0009\u0009\u0009; AL = 00000101b
+RET"</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="ascii">";ASCII adjustment instructions
+
+.MODEL SMALL
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,31H
+;Load ASCII 1
+\u0009\u0009\u0009ADD AX,39H
+;Load ASCII 9
+\u0009\u0009\u0009AAA
+;ASCII Adjust,
+; AX=0100 UNPACKED BCD
+\u0009\u0009\u0009ADD AX,3030H
+;Answer in ASCII
+\u0009\u0009\u0009MOV BL,9
+;Load divisor
+\u0009\u0009\u0009MOV AX,0702H
+;Load dividend, AAD instruction requires
+;AX register to contain a two digit unpacked
+;BCD number before executing
+\u0009\u0009\u0009AAD
+\u0009\u0009\u0009DIV BL
+\u0009\u0009\u0009MOV AL,5
+;Load multiplicand
+\u0009\u0009\u0009MOV CL,5
+;Load multiplier
+\u0009\u0009\u0009MUL CL
+\u0009\u0009\u0009AAM
+\u0009\u0009\u0009ADD AX,3030H
+\u0009\u0009\u0009MOV AX,38H
+\u0009\u0009\u0009SUB AX,31H
+\u0009\u0009\u0009AAS
+\u0009\u0009\u0009AX,3030H
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="bcdtobin">";Program for BCD to Binary conversion
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009BCD DW 27H
+\u0009\u0009\u0009BINARY DW ?
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,BCD
+\u0009\u0009\u0009AND AX,07H
+;Perform the AND operation between
+;07H and input BCD
+\u0009\u0009\u0009MOV BX,AX
+\u0009\u0009\u0009MOV AX,BCD
+\u0009\u0009\u0009AND AX,0F0H
+;Perform the AND with 0F0H for shifting operation.
+\u0009\u0009\u0009MOV CX,0AH
+\u0009\u0009\u0009MUL CX
+\u0009\u0009\u0009ADD AX,BX
+;Perform the addition operation to get the LSB.
+\u0009\u0009\u0009MOV BINARY,AX
+;Move the result to binary
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="beginner">"1) What is .MODEL SMALL,.DATA \u0009and .CODE ?
+\u0009\u0009\u0009These are the assembler directives in 8086 ALP.
+
+\u0009\u0009\u0009.MODEL provides shortcuts in defining the segments. It initializes memory model before defining any segment. SMALL is one of those memory models which initializes one code segment and one data segment
+
+\u0009\u0009\u0009.DATA provides shortcut in definition of the data segment
+
+\u0009\u0009\u0009.CODE provides shortcut in definition of the code segment
+
+2) What is DB and DW?
+\u0009\u0009\u0009 DB is define byte and DW is define word. These are used to set aside one or more storage locations of corresponding data type in the memory
+
+3)How to use this app ?
+
+a)Long press on the code and you can copy the code. Paste it on the emulator to run the code or you could copy it to a text file.
+
+b)To access all programs tap ALL button at bottom of the program menu and to search for a specific program tap the search icon.
+
+c)Instructions have hyperlinks. Tap on any instruction in any program ,it takes you to the instruction.
+
+d)Code is in Upper case and comments are in lower case.
+
+4)For any suggestion or query, feel free to mail us. To mail us tap on the 'mail' icon in the app's home screen."</string>
+    <string name="bintobcd">";Program to convert binary to BCD
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009BINARY DW 01A9H
+\u0009\u0009\u0009BCD DB 2 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,BINARY
+\u0009\u0009\u0009MOV CL,64H
+;100 in decimal
+\u0009\u0009\u0009 DIV CL
+\u0009\u0009\u0009MOV BCD+1,AL
+;Store the quotient in BCD+1.
+\u0009\u0009\u0009MOV AL,AH
+;Move the Reminder value to AL.
+\u0009\u0009\u0009MOV AH,00H
+\u0009\u0009\u0009MOV CL,0AH
+;10 in decimal.
+\u0009\u0009\u0009DIV CL
+;Perform the division by 10.
+\u0009\u0009\u0009MOV CL,04
+\u0009\u0009\u0009ROR AL,CL
+;Perform the Right side rotation 4 times.
+\u0009\u0009\u0009ADD AL,AH
+;Adding the Reminder in LSB.
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="bitwise">";BIT wise palindrome
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DW 0FFFFH
+\u0009\u0009\u0009MSG1 DB 10,13,'NUMBER IS PALINDROME',$
+\u0009\u0009\u0009MSG2 DB 10,13,'NUMBER IS N0T PALINDROME',$
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,X
+\u0009\u0009\u0009MOV CL,10H
+UP:
+\u0009\u0009\u0009ROR AX,1
+;Rotate right one time.
+\u0009\u0009\u0009RCL DX,1
+;Rotate left with carry one time.
+\u0009\u0009\u0009LOOP UP
+;Loop the process.
+\u0009\u0009\u0009CMP AX,DX
+\u0009\u0009\u0009JNZ DOWN
+;If no zero go to DOWN label.
+\u0009\u0009\u0009LEA DX,MSG1
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009JMP EXIT ;Jump to EXIT label.
+DOWN:
+\u0009\u0009\u0009LEA DX,MSG2
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+EXIT:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END
+;Output: Number is Palindrome"</string>
+    <string name="byt">";Byte and word data transfer in different addressing modes
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009DATA1 DB 23H
+\u0009\u0009\u0009DATA2 DW 1234H
+\u0009\u0009\u0009DATA3 DB 0H
+\u0009\u0009\u0009DATA4 DW 0H
+\u0009\u0009\u0009DATA5 DW 2345H,6789H
+
+
+.CODE
+\u0009\u0009\u0009START: MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,25H
+\u0009\u0009\u0009MOV AX,2345H
+\u0009\u0009\u0009MOV BX,AX
+\u0009\u0009\u0009MOV CL,AL
+\u0009\u0009\u0009MOV AL,DATA1
+\u0009\u0009\u0009MOV AX,DATA2
+\u0009\u0009\u0009MOV DATA3,AL
+\u0009\u0009\u0009MOV DATA4,AX
+\u0009\u0009\u0009MOV BX,OFFSET DATA5
+\u0009\u0009\u0009MOV AX,[BX]
+\u0009\u0009\u0009MOV DI,02H
+\u0009\u0009\u0009MOV AX,[BX+DI}
+\u0009\u0009\u0009MOV AX,[BX+0002H]
+\u0009\u0009\u0009MOV AL,[DI+2]
+\u0009\u0009\u0009MOV AX,[BX+DI+0002H]
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="call">"CALL
+
+Transfers control to procedure, return address is (IP) is pushed to stack. 4-byte address may be entered in this form: 1234h:5678h, first value is a segment second value is an offset (this is a far call, so CS is also pushed to stack).
+
+Operand :
+procedure name
+label
+4-byte address
+
+Example:
+CALL p1
+ADD AX, 1
+RET ; return to OS.
+
+p1 PROC NEAR \u0009; procedure declaration.
+\u0009\u0009MOV AX, 1234h
+\u0009\u0009RET \u0009\u0009\u0009\u0009\u0009\u0009\u0009; return to caller.
+\u0009\u0009ENDP"</string>
+    <string name="cbw">"CBW(Convert byte into word)
+
+Opeands : NIL
+
+Algorithm:
+if high bit of AL = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009AH = 255 (0FFh)
+else
+\u0009\u0009\u0009*\u0009\u0009\u0009AH = 0
+
+Example:
+MOV AX, 0 \u0009\u0009; AH = 0, AL = 0
+MOV AL, -5 \u0009\u0009; AX = 000FBh (251)
+CBW \u0009\u0009\u0009\u0009\u0009; AX = 0FFFBh (-5)
+RET
+
+________________________________________
+
+CWD(Convert Word to Double word)
+
+Operands : NIL
+
+Algorithm:
+if high bit of AX = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009DX = 65535 (0FFFFh)
+else
+\u0009\u0009\u0009*\u0009\u0009\u0009DX = 0
+
+Example:
+MOV DX, 0 \u0009\u0009; DX = 0
+MOV AX, 0 \u0009\u0009; AX = 0
+MOV AX, -5 \u0009\u0009; DX AX = 00000h:0FFFBh
+CWD \u0009\u0009\u0009\u0009\u0009; DX AX = 0FFFFh:0FFFBh
+RET"</string>
+    <string name="character">"; to check if character is present in the string
+
+; Logic : compare each character of the string
+; with the desired character, break the loop if found
+
+.MODEL SMALL
+
+DISP MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+; macro to display a string
+
+READ MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,0AH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+; macro to read a string
+
+.DATA
+MSG1 DB 0DH,0AH,'ENTER A STRING',0DH,0AH,'$'
+MSG2 DB 0DH,0AH,'ENTER CHARACTER TO FIND',0DH,0AH,'$'
+MSG3 DB 0DH,0AH,'CHARACTER FOUND',0DH,0AH,'$'
+MSG4 DB 0DH,0AH,'CHARACTER ABSENT',0DH,0AH,'$'
+STRING DB 30
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 30 DUP(0)
+CHAR DB 2
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 2 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009DISP MSG1
+\u0009\u0009\u0009READ STRING
+\u0009\u0009\u0009DISP MSG2
+\u0009\u0009\u0009READ CHAR
+\u0009\u0009\u0009MOV CH,00H
+\u0009\u0009\u0009MOV CL,[STRING+1]
+\u0009\u0009\u0009MOV AL,[CHAR+2]
+\u0009\u0009\u0009LEA DI,STRING+2
+\u0009\u0009\u0009REPNE SCASB
+\u0009\u0009\u0009JZ SKIP1
+\u0009\u0009\u0009DISP MSG4
+\u0009\u0009\u0009JMP SKIP2
+SKIP1:
+\u0009\u0009\u0009DISP MSG3
+SKIP2:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+
+    <string name="clc">"CLC(Clear Carry flag)
+
+Operand : NIL
+
+Algorithm:
+CF = 0
+
+_______________________________________
+
+STC(Set Carry flag)
+
+Operand :NIL
+
+Algorithm:
+CF = 1"</string>
+
+
+    <string name="cld">"CLD(Clear Directional flag)
+
+Operand : NIL
+
+Algorithm:
+DF = 0
+
+_______________________________________
+
+STD(Set Directional flag)
+
+Operand :NIL
+
+Algorithm:
+DF = 1"</string>
+    <string name="cli">"CLI(Clear Interrupt flag)
+
+Operand : NIL
+
+Algorithm:
+IF = 0
+
+_______________________________________
+
+STI(Set Interrupt flag)
+
+Operand :NIL
+
+Algorithm:
+IF = 1"</string>
+    <string name="cmc">"Complement Carry flag
+
+Inverts value of CF.
+
+Operands : NIL
+
+Algorithm:
+if CF = 1 then CF = 0
+if CF = 0 then CF = 1"</string>
+    <string name="cmp">"Compare
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+Algorithm :
+operand1 - operand2
+Result is not stored anywhere,
+flags are set (OF, SF, ZF, AF, PF, CF) according to result.
+
+Example:
+MOV AL, 5
+MOV BL, 5
+CMP AL, BL \u0009\u0009; AL = 5, ZF = 1 (so equal!)
+RET"</string>
+    <string name="cmps">"CMPS(Compare String)
+
+It is used only with the suffix to specify whether a character is represented in bytes or words.
+So the effective instructions will be CMPSB and CMPSW.
+Generally these instructions are preceded by the repeat instructions to compare the entire string
+
+_______________________________________
+
+CMPSB(Compare String Bytes):
+
+ES:[DI] from DS:[SI].
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009DS:[SI] - ES:[DI]
+\u0009\u0009\u0009*\u0009\u0009\u0009set flags according to result:
+\u0009\u0009\u0009\u0009\u0009\u0009OF, SF, ZF, AF, PF, CF
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 1
+\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 1
+
+_______________________________________
+
+CMPSW(Compare String Words):
+
+ES:[DI] from DS:[SI].
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009DS:[SI] - ES:[DI]
+\u0009\u0009\u0009*\u0009\u0009\u0009set flags according to result:
+\u0009\u0009\u0009\u0009\u0009\u0009OF, SF, ZF, AF, PF, CF
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 2
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 2"</string>
+    <string name="concatenate">"; to concatenate two strings
+
+.MODEL SMALL
+
+DISP MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+READ MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,0AH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+.DATA
+MSG1 DB 0DH,0AH,'ENTER FIRST STRING',0DH,0AH,'$'
+MSG2 DB 0DH,0AH,'ENTER SECOND STRING',0DH,0AH,'$'
+MSG3 DB 0DH,0AH,'CONCATENATED STRING',0DH,0AH,'$'
+STAPP DB 0DH,0AH,'$'
+STR1 DB 30
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 30 DUP(0)
+STR2 DB 30
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 30 DUP(0)
+STR3 DB 63
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 63 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009DISP MSG1
+\u0009\u0009\u0009READ STR1
+\u0009\u0009\u0009DISP MSG2
+\u0009\u0009\u0009READ STR2
+\u0009\u0009\u0009MOV CH,00H
+\u0009\u0009\u0009MOV CL,STR1+1
+\u0009\u0009\u0009LEA SI,STR1+2
+\u0009\u0009\u0009LEA DI,STR3
+\u0009\u0009\u0009REP MOVSB
+\u0009\u0009\u0009MOV CL,STR2+1
+\u0009\u0009\u0009LEA SI,STR2+2
+\u0009\u0009\u0009REP MOVSB
+\u0009\u0009\u0009MOV CL,03H
+\u0009\u0009\u0009LEA SI,STAPP
+\u0009\u0009\u0009REP MOVSB
+\u0009\u0009\u0009DISP MSG3
+\u0009\u0009\u0009DISP STR3
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="createfile">";Program to create new file
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009FILENAME DB 'HELLO.TXT'
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AH,3CH
+;dos function call to create new file
+\u0009\u0009\u0009MOV CX,0
+;CX = file attribute
+\u0009\u0009\u0009MOV DX,OFFSET FILENAME
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="cube">";Program to find the cube of a number
+;LOGIC: copy number to AX and BX
+;multiply the BX and AX. the result is stored in AX.
+;multiply again BX with AX.
+;this will give us the cube
+
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUMBER DW 0004H
+ ; Set NUMBER to 04H
+\u0009\u0009\u0009CUBE DW ?
+ ; Store the result in CUBE
+
+
+.CODE
+START: MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER
+\u0009\u0009\u0009MOV BX,AX
+\u0009\u0009\u0009MUL BX
+ \u0009\u0009\u0009MUL BX
+ \u0009\u0009\u0009MOV CUBE,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+ \u0009\u0009\u0009END"</string>
+    <string name="daa">"Decimal Adjust After Addition
+
+Corrects the result of addition of two packed BCD values.
+
+Operands : NIL
+
+Algorithm:
+if low nibble of AL > 9 or AF = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = AL + 6
+\u0009\u0009\u0009*\u0009\u0009\u0009AF = 1
+if AL > 9Fh or CF = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = AL + 60h
+\u0009\u0009\u0009*\u0009\u0009\u0009CF = 1
+
+Example:
+MOV AL, 0Fh \u0009\u0009\u0009; AL = 0Fh (15)
+DAA \u0009\u0009\u0009\u0009\u0009\u0009; AL = 15h
+RET"</string>
+    <string name="das">"Decimal Adjust After Subtraction
+
+Corrects the result of subtraction of two packed BCD values.
+
+Operands : NIL
+
+Algorithm:
+if lower nibble of AL > 9 or AF = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = AL - 6
+\u0009\u0009\u0009*\u0009\u0009\u0009AF = 1
+if AL > 9Fh or CF = 1 then:
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = AL - 60h
+\u0009\u0009\u0009*\u0009\u0009\u0009CF = 1
+
+Example:
+MOV AL, 0FFh \u0009\u0009\u0009; AL = 0FFh (-1)
+DAS \u0009\u0009\u0009\u0009\u0009\u0009; AL = 99H, CF = 1
+RET"</string>
+    <string name="descend">";Program to sort the numbers in descending order
+ ;LOGIC: NUM contains the numbers to be sorted. ;LEN indicates the count of numbers. ;This program uses bubble sort logic. ;The sorted numbers are stored in [DS+SI].
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUM DW 42H,34H,26H,17H,09H
+\u0009\u0009\u0009LEN EQU 05H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV BX,LEN-1
+;Initialize BX as the counter for loop UP
+\u0009\u0009\u0009MOV CX,BX
+;Initialize CX as the counter for loop UP1
+
+UP1: MOV BX,CX
+\u0009\u0009\u0009LEA SI,NUM
+;SI points to the first number in NUM
+
+UP: MOV AX,[SI]
+\u0009\u0009\u0009MOV DX,[SI+2]
+\u0009\u0009\u0009CMP AX,DX
+\u0009\u0009\u0009JA DOWN
+;no swapping if [SI] greater than [SI+2]
+\u0009\u0009\u0009MOV [SI],DX
+\u0009\u0009\u0009MOV [SI+2],AX
+;swap the numbers pointed by SI and SI+2
+;if [SI] is less than [SI+2]
+
+DOWN:
+\u0009\u0009\u0009 INC SI
+\u0009\u0009\u0009 INC SI
+;increment SI to point to next dataword(number)
+\u0009\u0009\u0009DEC BX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP1
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="div">"DIV(Unsigned division)
+
+Operands :
+REG
+memory
+
+Algorithm:
+when operand is a byte:
+\u0009\u0009AL = AX / operand
+\u0009\u0009AH = remainder (modulus)
+when operand is a word:
+\u0009\u0009AX = (DX AX) / operand
+\u0009\u0009DX = remainder (modulus)
+
+Example:
+MOV AX, 203 \u0009\u0009\u0009; AX = 00CBh
+MOV BL, 4
+DIV BL \u0009\u0009\u0009\u0009\u0009; AL = 50 (32h), AH = 3
+RET
+
+_______________________________________
+IDIV(Signed division)
+
+Operands :
+REG
+memory
+
+Algorithm:
+when operand is a byte:
+\u0009\u0009AL = AX / operand
+\u0009\u0009AH = remainder (modulus)
+when operand is a word:
+\u0009\u0009AX = (DX AX) / operand
+\u0009\u0009DX = remainder (modulus)
+
+Example:
+MOV AX, -203 \u0009\u0009\u0009; AX = 0FF35h
+MOV BL, 4
+IDIV BL \u0009\u0009; AL = -50 (0CEh)
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009; AH = -3 (0FDh)
+RET"</string>
+    <string name="divsigned">";Program for 8 bit division of signed numbers
+
+.MODEL SMALL
+\u0009\u0009\u0009NUM1 DB -10
+\u0009\u0009\u0009NUM2 DB 02
+\u0009\u0009\u0009QUO DB 1 DUP(0)
+\u0009\u0009\u0009REM DB 1 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,NUM1
+\u0009\u0009\u0009CBW
+\u0009\u0009\u0009IDIV NUM2
+;Perform the Sign Division
+;operation using IDIV operator
+\u0009\u0009\u0009MOV QUO,AL
+;Store the quotient to AL
+\u0009\u0009\u0009MOV REM,AH
+;Store the reminder to AH
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END
+
+
+;Program for division of 16 bit signed numbers
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM1 DW 4567H,2345H
+\u0009\u0009\u0009NUM2 DW 4111H
+\u0009\u0009\u0009QUO DW 2 DUP(0)
+\u0009\u0009\u0009REM DW 1 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUM1
+;Move the lower bit
+;of Dividend to AX
+\u0009\u0009\u0009MOV DX,NUM1+2
+;Move the higher
+;bit of Dividend to DX
+\u0009\u0009\u0009CWD
+\u0009\u0009\u0009IDIV NUM2
+;Perform the sign Division
+;operation using IDIV
+\u0009\u0009\u0009MOV QUO,AX
+;Store the quotient to AX
+\u0009\u0009\u0009MOV REM,DX
+;Store the reminder to DX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="divunsigned">";Program for 8 bit division for unsigned numbers
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM1 DB 72H,
+\u0009\u0009\u0009NUM2 DB 02H
+\u0009\u0009\u0009QUO DB 1 DUP(0)
+\u0009\u0009\u0009REM DB 1 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,NUM1
+\u0009\u0009\u0009MOV AH,0H
+\u0009\u0009\u0009DIV NUM2
+\u0009\u0009\u0009MOV QUO,AL
+;Store the quotient to AL
+\u0009\u0009\u0009MOV REM,AH
+;Store the reminder to AH
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END
+
+
+;Program for division of 16 bit unsigned numbers
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM1 DW 4567H,2345H
+\u0009\u0009\u0009NUM2 DW 4111H
+\u0009\u0009\u0009QUO DW 2 DUP(0)
+\u0009\u0009\u0009REM DW 1 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUM1
+;Move the lower bit
+;of Dividend to AX
+\u0009\u0009\u0009MOV DX,NUM1+2
+;Move the higher bit
+;of Dividend to DX
+\u0009\u0009\u0009DIV NUM2
+;Perform the Division operation
+\u0009\u0009\u0009MOV QUO,AX
+;Store the quotient to AX
+\u0009\u0009\u0009MOV REM,DX
+;Store the reminder to DX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="equalstring">"; to check whether two strings are equal
+
+.MODEL SMALL
+
+DISP MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+READ MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,0AH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+.DATA
+MSG1 DB 0DH,0AH,'ENTER FIRST STRING',0DH,0AH,'$'
+MSG2 DB 0DH,0AH,'ENTER SECOND STRING',0DH,0AH,'$'
+MSG3 DB 0DH,0AH,'STRINGS ARE EQUAL',0DH,0AH,'$'
+MSG4 DB 0DH,0AH,'STRINGS ARE UNEQUAL',0DH,0AH,'$'
+STR1 DB 80
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 80 DUP(0)
+STR2 DB 80
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 80 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009DISP MSG1
+\u0009\u0009\u0009READ STR1
+\u0009\u0009\u0009DISP MSG2
+\u0009\u0009\u0009READ STR2
+\u0009\u0009\u0009MOV CH,00H
+\u0009\u0009\u0009MOV CL,STR1+1
+\u0009\u0009\u0009LEA SI,STR1+2
+\u0009\u0009\u0009LEA DI,STR2+2
+BACK:
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009CLD
+\u0009\u0009\u0009REPE CMPSB
+\u0009\u0009\u0009JNZ SKIP1
+\u0009\u0009\u0009DISP MSG3
+\u0009\u0009\u0009JMP SKIP2
+SKIP1:
+\u0009\u0009\u0009DISP MSG4
+SKIP2:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="esc">"Escape
+
+The escape instruction passes instructions to the floating-point coprocessor from the microprocessor. Whenever an ESC instruction executes, the microprocessor provides the memory address, if required, but otherwise performs a NOP. Six bits of the ESC instruction provide the opcode to the coprocessor and begin executing a coprocessor instruction.
+The ESC opcode never appears in a program as ESC and in itself is considered obsolete as an opcode. In its place are a set of coprocessor instructions (FLD, FST, FMUL, etc.) that assemble as ESC instructions for the coprocessor."</string>
+    <string name="exchange">";Program to interchange a block of data
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DB 01H,02H,03H,04H,05H
+\u0009\u0009\u0009NUMBER1 DB 11H,12H,13H,14H,15H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV CX,05H
+; Load the counter
+\u0009\u0009\u0009LEA SI,NUMBER
+;SI pointed to the source location x
+\u0009\u0009\u0009LEA DI,NUMBER1
+;DI pointed to the destination location y
+UP:
+\u0009\u0009\u0009MOV BL,[SI]
+\u0009\u0009\u0009MOV AL,[DI]
+\u0009\u0009\u0009MOV [SI],AL
+\u0009\u0009\u0009MOV [DI],BL
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="factorial">";Program to find the factorial of a number
+
+;LOGIC: Number is stored in AX.
+; It is multiplied with contents of CX.
+; Multiplication is continued
+;until CX=0
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUMBER DW 0004H
+; This is the number
+\u0009\u0009\u0009FACTORIAL DW ?
+; To store the result
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER
+; Copy the number to AX
+\u0009\u0009\u0009MOV BX,AX
+; Copy the number to CX
+\u0009\u0009\u0009MOV AX,0001H
+; Set AX to 01H
+LOOP1:
+\u0009\u0009\u0009MUL BX
+ ; This multiplies CX to AX until cx=0
+\u0009\u0009\u0009DEC BX
+\u0009\u0009\u0009JNZ LOOP1
+\u0009\u0009\u0009MOV FACTORIAL,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="flag">"Flag register
+
+
+* It is 16 bit wide.
+
+* It has nine active flags.
+
+* The flags indicate certain condition produced after the execution of an instruction.
+
+* CF,PF,AF,ZF,SF change after many arithmetic and logic instructions execution.
+
+* Some of the flags are also used to control features found in the microprocessor
+
+* Carry Flag(C): Carry holds the carry after addition or the borrow after subtraction. The carry flag also indicates error conditions, as dictated by some programs and procedures.
+
+* Parity Flag(P): Parity is a logic 0 for odd parity and a logic 1 for even parity. Parity is the count of ones in a number expressed as even or odd.
+
+* Auxiliary Flag(A): The auxiliary carry holds the carry (half-carry) after addition or the borrow after subtraction between bit positions 3 and 4 of the result. This flag bit is tested by DAA and DAS instructions to adjust the value of AL after a BCD addition or subtraction.
+
+* Zero Flag(Z): The zero flag shows that the result of an arithmetic or logic operation is zero. Z=1 indicates the result is zero;Z=0 the result is not zero.
+
+* Sign Flag (S): The sign flag holds the arithmetic sign of the result after an arithmetic or logic instruction executes.S=1 indicates that the sign bit (leftmost bit of a number) is set or negative; S=0 indicates that the sign bit is cleared or positive.
+
+* Trap Flag(T): Trap flag is used to single step through the program. If the trap flag is set , a trap is executed after execution of each instruction.
+
+* Interrupt Flag(I): The interrupt flag controls the operation of the INTR (interrupt request) input pin. I=1 indicates that the INTR pin is enabled;I=0 indicates that the INTR pin is disabled. We can set or clear the interrupt flag using STI and CLI.
+
+* Overflow flag(O) : Overflows occur when signed numbers are added or subtracted. An overflow indicates that the result has exceeded the capacity of the machine. It is set when the (carry into the MSB) XOR (carry out of MSB) = 1."</string>
+    <string name="gcd">";Program to find the GCD of two numbers
+
+;LOGIC: Let us consider 10 and 5.
+; Assume num1 = 10 and num2 = 5.
+;Compare 10,5 . 10-5 no borrow.
+;So we go to loop2.10/5 = 2
+;remainder will be stored in DX.
+;Since DX is zero the value in BX will be
+;the GCD.
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER1 DW 000AH
+\u0009\u0009\u0009NUMBER2 DW 0004H
+\u0009\u0009\u0009GCD DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER1
+\u0009\u0009\u0009MOV BX,NUMBER2
+LOOP1:
+\u0009\u0009\u0009CMP AX,BX
+\u0009\u0009\u0009JE EXIT
+\u0009\u0009\u0009JB LOOP3
+LOOP2:
+\u0009\u0009\u0009MOV DX,0000H
+\u0009\u0009\u0009DIV BX
+\u0009\u0009\u0009CMP DX,0H
+\u0009\u0009\u0009JE EXIT
+\u0009\u0009\u0009MOV AX,DX
+\u0009\u0009\u0009JMP LOOP1
+LOOP3:
+\u0009\u0009\u0009XCHG AX,BX
+\u0009\u0009\u0009JMP LOOP2
+EXIT:
+\u0009\u0009\u0009MOV GCD,BX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="general">"General Purpose Registers
+
+
+* 8086 has 4 general purpose registers.
+
+* They are AX,BX,CX,DX.
+
+* These registers are 16 bit wide.
+
+* The registers can split into two and used as AL and AH which specify lower and higher bytes of a particular register.
+
+* AX is used as an accumulator.
+
+* BX is used as an offset for generating physical address.
+
+* CX is used as counter.
+
+* DX is used to hold the 16-bit address of port during I/O operations."</string>
+    <string name="hlt">"Halt the System.
+
+Operands : NIL
+
+Example:
+MOV AX, 5
+HLT"</string>
+    <string name="in">"IN(Input)
+
+Input from port into AL or AX.
+Second operand is a port number. If required to access port number over 255 - DX register should be used.
+
+Operands :
+8-bit port address
+DX (contains 16-bit port address)
+
+Example:
+IN AX, DX \u0009\u0009\u0009; get status of port
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;specified by 16-bit
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;port address in DX
+IN AL, 43h \u0009\u0009\u0009; get status from
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;port address 43h
+
+_______________________________________
+
+OUT(Output)
+
+Output from AL or AX to port.
+First operand is a port number. If required to access port number over 255 - DX register should be used.
+
+Operands :
+8-bit port address
+DX (contains 16-bit port address)
+
+Example:
+OUT AX, DX \u0009\u0009\u0009; set status of port
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;specified by 16-bit
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;port address in DX
+OUT AL, 43h \u0009\u0009\u0009; set status of
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;port address 43h"</string>
+    <string name="inc">"INC(Increment)
+
+Operands :
+Register
+memory
+
+Algorithm:
+operand = operand + 1
+
+Example:
+MOV AL, 4
+INC AL \u0009\u0009\u0009\u0009 ; AL = 5
+RET
+
+_______________________________________ DEC(Decrement)
+
+Operands :
+Register
+memory
+
+Algorithm:
+operand = operand - 1
+
+Example:
+MOV AL, 4
+DEC AL \u0009\u0009\u0009\u0009 ; AL = 3
+RET"</string>
+    <string name="interrupt">"INT(Interrupt)
+
+Software Interrupts numbered by immediate byte (0...255).
+
+Operands :
+immediate byte
+
+Algorithm :
+\u0009\u0009\u0009*\u0009\u0009\u0009Push to stack:
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009flags register
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009CS
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009IP
+\u0009\u0009\u0009*\u0009\u0009\u0009IF = 0
+\u0009\u0009\u0009*\u0009\u0009\u0009Transfer control to interrupt procedure
+
+Example:
+MOV AH, 0Eh \u0009\u0009\u0009; teletype.
+MOV AL, 'A'
+INT 10h \u0009\u0009\u0009\u0009\u0009; BIOS interrupt.
+RET
+
+_______________________________________
+
+INTO
+
+Interrupt 4 if Overflow flag is 1.
+
+Operands : NIL
+
+Algorithm:
+if OF = 1 then INT 4
+
+Example:
+; -5 - 127 = -132 (not in -128..127)
+; the result of SUB is wrong (124),
+; so OF = 1 is set:
+MOV AL, -5
+SUB AL, 127 \u0009\u0009 ; AL = 7Ch (124)
+INTO \u0009\u0009\u0009\u0009\u0009; process error.
+RET"</string>
+    <string name="iret">"Interrupt Return
+
+Returns the control to the main program which was interrupted.
+
+Operand : NIL
+
+Algorithm :
+\u0009\u0009\u0009*\u0009\u0009\u0009Pop from stack:
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009flags register
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009CS
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009IP
+\u0009\u0009\u0009*\u0009\u0009\u0009Transfer control to interrupt procedure"</string>
+    <string name="jumps">"Jumps
+
+Transfers control to another part of the program on the specified conditions or unconditionally.
+
+Operands :
+16-byte address (only for JMP)
+label (for any jumps)
+
+Algorithm:
+if condition satisfied:
+\u0009\u0009\u0009jumps to specified location/label
+else
+\u0009\u0009\u0009normal execution
+Jump type \u0009\u0009|\u0009\u0009Condition
+JA \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=0 and C=0
+JAE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=0
+JB \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1
+JBE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1 or Z=1
+JC \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1
+JCXZ \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=0
+JE \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=1
+JG \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=0 and S=O(overflow)
+JGE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009S=O(overflow)
+JL \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1
+JLE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1 or Z=1
+JMP \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009always
+JNA \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1 or Z=1
+JNAE \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=1
+JNB \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=0
+JNBE \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=0 and Z=0
+JNC \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009C=0
+JNE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=0
+JNG \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=1 and S!=O(overflow)
+JNGE \u0009\u0009\u0009\u0009\u0009|\u0009\u0009S!=O(overflow)
+JNL \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009S=O(overflow)
+JNLE \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=0 and S=O(overflow)
+JNO \u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009O(overflow)=0
+JNP \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009P=0
+JNS \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009S=0
+JNZ \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=0
+JO \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009O(overflow)=1
+JP \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009P=1
+JPE \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009P=1
+JPO \u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009P=0
+JS \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009S=1
+JZ \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009Z=1"</string>
+    <string name="lahf">"LAHF
+
+Load AH from 8 low bits of Flags register.
+
+Operands :NIL
+
+Algorithm:
+AH = flags register
+AH bit:
+7\u0009\u0009\u00096\u0009\u0009\u00095\u0009\u0009\u00094\u0009\u0009\u00093\u0009\u0009\u00092\u0009\u0009\u00091\u0009\u00090
+[SF]\u0009[ZF]\u0009[0]\u0009[AF]\u0009[0]\u0009[PF]\u0009[1]\u0009[CF]
+bits 1, 3, 5 are reserved.
+
+______________________________________
+
+SAHF
+
+Store AH register into low 8 bits of Flags register.
+
+Operands : NIL
+
+Algorithm:
+flags register = AH
+AH bit:
+7\u0009\u0009\u00096\u0009\u0009\u00095\u0009\u0009\u00094\u0009\u0009\u00093\u0009\u0009\u00092\u0009\u0009\u00091\u0009\u00090
+[SF]\u0009[ZF]\u0009[0]\u0009[AF]\u0009[0]\u0009[PF]\u0009[1]\u0009[CF]
+bits 1, 3, 5 are reserved."</string>
+    <string name="largest">";Program to find the largest number
+
+;LOGIC:NUM contains the sequence of
+;numbers.CX contains the count of numbers.
+;The first number is moved to AX,then
+;the rest of the numbers are compared to
+;it.If the number is larger than AX, then
+;it is moved to AX. Finally LAR contains the
+;largest number.
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUM DW 0010H,52H,30H,40H,50H
+\u0009\u0009\u0009LAR DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV CX,05H
+\u0009\u0009\u0009LEA SI,NUM
+\u0009\u0009\u0009MOV AX,[SI]
+\u0009\u0009\u0009DEC CX
+
+UP:
+\u0009\u0009\u0009CMP AX,[SI+2]
+\u0009\u0009\u0009JA CONTINUE
+;if number at SI+2 is greater than number
+;at AX,then it is moved to AX
+\u0009\u0009\u0009MOV AX,[SI+2]
+
+CONTINUE:
+\u0009\u0009\u0009ADD SI,2
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV LAR,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="lcm">";Program to find the LCM of two numbers
+
+;LOGIC: Let us consider 10 and 5.
+; Assume num1 = 10 and num2 = 5.
+;Compare 10,5 . 10-5 no borrow.
+;So we go to loop2.10/5 = 2
+;remainder will be stored in DX.
+;Since DX is zero the value in BX will be
+;the GCD.
+;Multiply 10*5=50. Divide by GCD.
+;That will give LCM
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER1 DW 000AH
+\u0009\u0009\u0009NUMBER2 DW 0004H
+\u0009\u0009\u0009GCD DW ?
+\u0009\u0009\u0009LCM DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER1
+\u0009\u0009\u0009MOV BX,NUMBER2
+LOOP1:
+\u0009\u0009\u0009CMP AX,BX
+\u0009\u0009\u0009JE EXIT
+\u0009\u0009\u0009JB LOOP3
+LOOP2:
+\u0009\u0009\u0009MOV DX,0000H
+\u0009\u0009\u0009DIV BX
+\u0009\u0009\u0009CMP DX,0H
+\u0009\u0009\u0009JE EXIT
+\u0009\u0009\u0009MOV AX,DX
+\u0009\u0009\u0009JMP LOOP1
+LOOP3:
+\u0009\u0009\u0009XCHG AX,BX
+\u0009\u0009\u0009JMP LOOP2
+EXIT:
+\u0009\u0009\u0009MOV GCD,BX
+\u0009\u0009\u0009 MOV AX,NUMBER1
+\u0009\u0009\u0009 MOV BX,NUMBER2
+\u0009\u0009\u0009 MUL BX
+\u0009\u0009\u0009 DIV GCD
+\u0009\u0009\u0009 MOV LCM,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="lds">"LDS
+
+Load memory double word into word register and DS.
+
+Operands :
+REG, memory
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009REG = first word
+\u0009\u0009\u0009*\u0009\u0009\u0009DS = second word
+
+Example:
+m DW 1234h
+\u0009DW 5678h
+.
+.
+LDS AX, m
+RET
+END
+
+AX is set to 1234h, DS is set to 5678h.
+
+______________________________________
+
+LES
+
+Load memory double word into word register and ES.
+
+Operands :
+REG, memory
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009REG = first word
+\u0009\u0009\u0009*\u0009\u0009\u0009ES = second word
+
+Example:
+m DW 1234h
+\u0009DW 5678h
+.
+.
+LES AX, m
+RET
+END
+
+AX is set to 1234h, ES is set to 5678h."</string>
+    <string name="lea">"LEA
+
+Load Effective Address.
+
+Operands :
+REG, memory
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009REG = address of memory (offset)
+
+Generally this instruction is replaced by MOV when assembling when possible.
+
+Example:
+m DW 1234h
+LEA AX, m
+RET
+END
+
+AX is set to: 0104h.
+
+LEA instruction takes 3 bytes, RET takes 1 byte, we start at 100h, so the address of 'm' is 104h."</string>
+    <string name="lock">"LOCK
+
+When an instruction is prefixed with LOCK, the system bus is locked dedicated to the processor in the multiprocessor environment"</string>
+    <string name="lods">"LODS(Load String)
+
+It is used only with the suffix to specify whether a character is represented in bytes or words.
+So the effective instructions will be LODSB and LODSW.
+Generally these instructions are preceded by the repeat instructions to load the entire string
+
+_______________________________________
+
+LODSB(Load String Byte)
+
+Load byte at DS:[SI] into AL. Update SI.
+
+Operands : NIL
+
+Algorithm :
+\u0009\u0009\u0009*\u0009\u0009\u0009AL = DS:[SI]
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 1
+else
+\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 1
+
+Example:
+\u0009LEA SI, a1
+\u0009MOV CX, 5
+\u0009MOV AH, 0Eh
+m:\u0009LODSB
+\u0009INT 10h
+\u0009LOOP m
+\u0009RET
+
+a1 DB 'H', 'e', 'l', 'l', 'o'
+
+_______________________________________
+
+LODSW(Load String Word)
+
+Load word at DS:[SI] into AX. Update SI.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009AX = DS:[SI]
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 2
+
+Example:
+LEA SI, a1
+MOV CX, 5
+REP LODSW \u0009\u0009; finally there will be
+\u0009\u0009\u0009\u0009\u0009\u0009\u0009;555h in AX.
+RET
+
+a1 dw 111h, 222h, 333h, 444h, 555h"</string>
+    <string name="logic">".MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009PORTA EQU 120H
+\u0009\u0009\u0009PORTB EQU 121H
+\u0009\u0009\u0009PORTC EQU 122H
+\u0009\u0009\u0009CWRD EQU 123H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,DATA
+; intialise data segment
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,82H
+;load the control word
+\u0009\u0009\u0009MOV DX, CR
+\u0009\u0009\u0009OUT DX,AX
+
+REPEAT:
+\u0009\u0009\u0009MOV DX, PB
+;input the data (from dip switch)from port b
+\u0009\u0009\u0009IN AL,DX
+\u0009\u0009\u0009AND AL, 03H
+\u0009\u0009\u0009CMP AL,00H
+\u0009\u0009\u0009JZ DISPLAY
+\u0009\u0009\u0009CMP AL,03H
+; check if input is 11
+\u0009\u0009\u0009JZ DISPLAY
+
+\u0009\u0009\u0009MOV AL,0FFH
+;display 11 if input is 01 else 10
+\u0009\u0009\u0009MOV DX, PA
+; output to porta
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009JMP REPEAT
+
+\u0009\u0009\u0009DISPLAY: MOV AL,00H
+; display oo if input is 00 else 11
+\u0009\u0009\u0009MOV DX,PA
+; output to porta
+\u0009\u0009\u0009OUT DX, AL
+\u0009\u0009\u0009JMP REPEAT
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="loops">"Loops
+
+Looping is done based on the counter and terminating condition
+
+Operands :
+label
+
+Algorithm :
+\u0009\u0009\u0009*\u0009\u0009\u0009CX = CX - 1
+\u0009\u0009\u0009*\u0009\u0009\u0009if termination condition satisfied
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009terminate loop
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009Loop back
+
+ Loop type \u0009\u0009|\u0009\u0009Terminating Condition
+LOOP \u0009\u0009\u0009\u0009\u0009|\u0009\u0009CX=0
+LOOPE \u0009\u0009\u0009\u0009|\u0009\u0009CX=0 or Z=0
+LOOPNE \u0009\u0009\u0009|\u0009\u0009CX=0 or Z=1
+LOOPNZ \u0009\u0009\u0009|\u0009\u0009CX=0 or Z=1
+LOOPZ \u0009\u0009\u0009\u0009|\u0009\u0009CX=0 OR Z=0"</string>
+    <string name="matrix">".MODEL SMALL
+
+.DATA
+PORTA EQU 120H
+PORTC EQU 122H
+CWRD EQU 123H
+ARRAY DB '0123456789.+-*/%ACK=MMMM'
+
+.CODE
+START:
+
+; initialise data segment
+\u0009\u0009 MOV AX,DATA
+\u0009\u0009 MOV DS,AX
+; initialise 8255 porta as i/p and portc as o/p
+\u0009\u0009 MOV AL,90H
+;control word setup
+\u0009\u0009 MOV DX,CWRD
+\u0009\u0009 OUT DX,AL
+
+REPEAT:
+; make first row of the keyboard high through pc0
+\u0009\u0009 MOV DX,PORTC
+\u0009\u0009 MOV AL,01
+\u0009\u0009 OUT DX,AL
+\u0009\u0009 MOV DX,PORTA
+; input contents of porta and check if key is pressed-
+\u0009\u0009 IN AL,DX
+; in first row.
+\u0009\u0009 CMP AL,00
+\u0009\u0009 JZ NEXT
+\u0009\u0009 JMP FIRSTROW
+
+NEXT:
+; if key not found in first row, check if key is in
+; second row
+\u0009\u0009 MOV DX,PORTC
+\u0009\u0009 MOV AL,02
+\u0009\u0009 OUT DX,AL
+\u0009\u0009 MOV DX,PORTA
+\u0009\u0009 IN AL,DX
+\u0009\u0009 CMP AL,00
+\u0009\u0009 JNZ SECONDROW
+; if key not found then check for key closure in
+; third row
+\u0009\u0009 MOV AL,04
+\u0009\u0009 MOV DX,PORTC
+\u0009\u0009 OUT DX,AL
+\u0009\u0009 MOV DX,PORTA
+\u0009\u0009 IN AL,DX
+\u0009\u0009 CMP AL,00H
+\u0009\u0009 JNZ THIRDROW
+\u0009\u0009 JMP REPEAT
+
+FIRSTROW:
+; check all the keys one by onein first row LEA SI,ARRAY
+\u0009\u0009 CALL DELAY
+
+UP:
+\u0009\u0009 SHR AL,1
+; if key found jump to the display subroutine
+\u0009\u0009 JC DISPLAY
+\u0009\u0009 INC SI
+\u0009\u0009 JMP UP
+\u0009\u0009 JMP DISPLAY
+
+SECONDROW:
+\u0009\u0009 CALL DELAY
+; second row keys from array +08
+\u0009\u0009 LEA SI,ARRAY+08H
+UP1: SHR AL,1
+; if key found jump to the display subroutine
+\u0009\u0009 JC DISPLAY
+\u0009\u0009 INC SI
+\u0009\u0009 JMP UP
+
+THIRDROW:
+\u0009\u0009 CALL DELAY
+; third row keys from array +16(dec)
+\u0009\u0009 LEA SI,ARRAY+10H
+UP2: SHR AL,1
+; if key found jump to the display subroutine
+\u0009\u0009 JC DISPLAY
+\u0009\u0009 INC SI
+\u0009\u0009 JMP UP2
+\u0009\u0009 JMP DISPLAY
+
+DISPLAY:
+\u0009\u0009 MOV DL,[SI]
+; 24 in decimal. 8x3rows = 24keys
+\u0009\u0009 CMP DL,97
+\u0009\u0009 JZ EXIT
+; display key no in ascii
+\u0009\u0009 MOV AH,02H
+\u0009\u0009 INT 21H
+\u0009\u0009 JMP REPEAT
+
+DELAY:
+\u0009\u0009 MOV BX,0FFFFH
+L1: MOV CX,0FFFH
+L2: DEC CX
+\u0009\u0009 JNZ L2
+\u0009\u0009 DEC BX
+\u0009\u0009 JNZ L1
+\u0009\u0009 RET
+
+EXIT:
+\u0009\u0009 MOV AH,4CH
+\u0009\u0009 INT 21H
+
+\u0009\u0009 END START
+\u0009\u0009 END"</string>
+    <string name="motor">".MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009PORTA EQU 120H
+\u0009\u0009\u0009PORTB EQU 121H
+\u0009\u0009\u0009PORTC EQU 122H
+\u0009\u0009\u0009CWRD EQU 123H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,DATA
+; intialise data segment
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,80H
+;initialise 8255 ,porta as o/p port
+\u0009\u0009\u0009MOV DX,CWRD
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009MOV DX,PORTA
+\u0009\u0009\u0009MOV AL,88H
+; load initial bit pattern
+\u0009\u0009\u0009OUT DX,AL
+; output on porta
+
+UP:
+\u0009\u0009\u0009CALL DELAY
+\u0009\u0009\u0009ROL AL,01H
+; rotate left to get exitation
+; sequence of 11,22,44,88
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009JMP UP
+DELAY:
+\u0009\u0009\u0009MOV CX,0FFFFH
+;delay can be adjusted to get different speeds
+
+UP2:
+\u0009\u0009\u0009MOV BX,0FFH
+
+UP1:
+\u0009\u0009\u0009DEC BX
+\u0009\u0009\u0009JNZ UP1
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP2
+\u0009\u0009\u0009RET
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="mov">"Move
+
+Copy operand2 to operand1.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+SREG, memory
+memory, SREG
+REG, SREG
+SREG, REG
+
+The MOV instruction cannot:
+\u0009\u0009\u0009*\u0009\u0009\u0009set the value of the CS and IP registers.
+\u0009\u0009\u0009*\u0009\u0009\u0009copy value of one segment register to another segment register (should copy to general register first).
+\u0009\u0009\u0009*\u0009\u0009\u0009copy immediate value to segment register (should copy to general register first).
+
+Algorithm:
+operand1 = operand2
+
+Example:
+MOV AX, 0B800h \u0009\u0009\u0009 ; set AX = B800h .
+MOV DS, AX \u0009\u0009\u0009 ; copy value of AX to DS.
+MOV CL, 'A' \u0009\u0009\u0009 ; CL = 41h (ASCII code).
+MOV CH, 01011111b\u0009\u0009\u0009 ; CH = 5Fh (binary)
+MOV BX, 15Eh \u0009\u0009\u0009 ; BX = 015Eh
+MOV [BX], CX \u0009 ; value of CX is stored \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009;in the location 015Eh.
+RET \u0009\u0009\u0009 ; returns to operating system."</string>
+    <string name="move">";Program to move a block of data without overlapping
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUMBER DB 01H,02H,03H,04H,05H
+\u0009\u0009\u0009NUMBER1 DB 05 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV CX,05H
+\u0009\u0009\u0009LEA SI,NUMBER
+;SI pointer pointed to
+;top of the memory block
+\u0009\u0009\u0009LEA DI,NUMBER1
+UP:
+\u0009\u0009\u0009MOV AL,[SI]
+\u0009\u0009\u0009MOV [DI],AL
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="moveoverlap">";Program to move a block of data with overlapping
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DB 01H,02H,03H,04H,05H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009 MOV CX,05H
+;Load counter
+\u0009\u0009\u0009LEA SI,NUMBER
+\u0009\u0009\u0009;SI pointer pointed to top of the memory block
+\u0009\u0009\u0009LEA DI,NUMBER+03
+UP:
+\u0009\u0009\u0009MOV AL,[SI]
+\u0009\u0009\u0009MOV [DI],AL
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="movs">"MOVS(Move String)
+
+It is used only with the suffix to specify whether a character is represented in bytes or words.
+So the effective instructions will be MOVSB and MOVSW.
+Generally these instructions are preceded by the repeat instructions to move the entire string
+
+_______________________________________
+
+MOVSB(Move String Byte)
+
+Copy byte at DS:[SI] to ES:[DI]. Update SI and DI.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] = DS:[SI]
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 1
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 1
+
+Example:
+LEA SI, a1
+LEA DI, a2
+MOV CX, 5
+REP MOVSB \u0009; Moves 5 bytes for String data
+RET
+a1 DB 1,2,3,4,5
+a2 DB 5 DUP(0)
+
+_______________________________________
+
+MOVSW(Move String Word)
+
+Copy word at DS:[SI] to ES:[DI]. Update SI and DI.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] = DS:[SI]
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009SI = SI - 2
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 2
+
+Example:
+LEA SI, a1
+LEA DI, a2
+MOV CX, 5
+REP MOVSW \u0009; Moves 5 words for String data
+RET
+a1 DW 1,2,3,4,5
+a2 DW 5 DUP(0)"</string>
+    <string name="mul">"MUL(Unsigned multiply)
+
+Operands :
+REG
+memory
+
+Algorithm:
+when operand is a byte:
+AX = AL * operand.
+when operand is a word:
+(DX AX) = AX * operand.
+
+Example:
+MOV AL, 200 \u0009 ; AL = 0C8h
+MOV BL, 4
+MUL BL \u0009\u0009\u0009; AX = 0320h (800)
+RET
+
+______________________________________
+
+IMUL(Signed multiply)
+
+Operands :
+REG
+memory
+
+Algorithm:
+when operand is a byte:
+\u0009AX = AL * operand.
+when operand is a word:
+\u0009(DX AX) = AX * operand.
+
+Example:
+MOV AL, -2
+MOV BL, -4
+IMUL BL \u0009\u0009\u0009 ; AX = 8
+RET"</string>
+    <string name="mulsigned">";Program to multiply two 16 bit signed numbers
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM DW -2,1
+\u0009\u0009\u0009PROD DW 2 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009LEA SI,NUM
+; SI pointed to the Multiplicand
+\u0009\u0009\u0009MOV AX,[SI]
+; Multiplicand has to
+;be in AX register
+\u0009\u0009\u0009MOV BX,[SI+2]
+; SI+2 pointed to the
+;Multiplier and move it to BX
+\u0009\u0009\u0009IMUL BX
+;Multiplication operator (IMUL)
+\u0009\u0009\u0009MOV PROD,AX
+;32 bit product stored
+;in DX-AX registers
+\u0009\u0009\u0009MOV PROD+2,DX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="mulunsigned">";Program to multiply 16 bit unsigned numbers
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM DW 1234H,1234H
+\u0009\u0009\u0009PROD DW 2 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009LEA SI,NUM
+; SI pointed to the Multiplicand
+\u0009\u0009\u0009MOV AX,[SI]
+; Multiplicand has to be
+; in AX register MOV BX,[SI+2]
+;SI+2 pointed to the Multiplier
+;and move it to BX
+\u0009\u0009\u0009MUL BX
+\u0009\u0009\u0009MOV PROD,AX
+;32 bit product stored
+;in DX-AX registers
+\u0009\u0009\u0009MOV PROD+2,DX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+
+    <string name="neg">"Negate
+
+Makes operand negative (two's complement).
+
+Operands :
+REG
+memory
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Invert all bits of the operand
+\u0009\u0009\u0009*\u0009\u0009\u0009Add 1 to inverted operand
+Example:
+MOV AL, 5 \u0009\u0009 ; AL = 05h
+NEG AL \u0009\u0009\u0009 ; AL = 0FBh (-5)
+NEG AL \u0009\u0009\u0009 ; AL = 05h (5)
+RET"</string>
+    <string name="nibblewise">";Program for nibble wise palindrome
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DW 2662H
+\u0009\u0009\u0009TEMP DW 0H
+\u0009\u0009\u0009MES DB 10,13,'THE W0RD IS NIBBLEWISE PALINDROME',$
+\u0009\u0009\u0009MES1 DB 10,13,'THE W0RD IS N0T NIBBLEWISE PALINDROME',$
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER
+\u0009\u0009\u0009MOV BX,NUMBER
+\u0009\u0009\u0009MOV CL,04
+\u0009\u0009\u0009AND AX,0000FH
+\u0009\u0009\u0009AND BX,0F000H
+\u0009\u0009\u0009ROL BX,CL
+;Rotate left side 4 times the BX.
+\u0009\u0009\u0009CMP AX,BX
+;Compare AX with BX.
+\u0009\u0009\u0009JNZ TER
+;If no zero go to TER label.
+\u0009\u0009\u0009MOV AX,NUMBER
+\u0009\u0009\u0009ROR AX,CL
+;Rotate right side 4 times the AX.
+\u0009\u0009\u0009MOV BX,AX
+\u0009\u0009\u0009AND AX,000FH
+;Perform the and operation with last nibble.
+\u0009\u0009\u0009ROR BX,CL
+;Rotate right side 4 times the BX.
+\u0009\u0009\u0009AND BX,000FH
+\u0009\u0009\u0009CMP AX,BX
+\u0009\u0009\u0009JNZ TER
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009LEA DX,MES
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009JMP LAST
+TER:
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009LEA DX,MES1
+\u0009\u0009\u0009INT 21H
+LAST:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="nop">"No Operation
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Do nothing
+Example:
+; do nothing, 3 times:
+NOP
+NOP
+NOP
+RET"</string>
+    <string name="odd">";Program to check if the given data is odd or even
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUMBER DB 20H
+\u0009\u0009\u0009MES1 DB 10,13,'NUMBER IS EVEN ',$
+\u0009\u0009\u0009MES2 DB 10,13,'NUMBER IS ODD ',$
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,NUMBER
+\u0009\u0009\u0009MOV AH,00H
+\u0009\u0009\u0009ROR AL,1
+;Rotate the number to right
+\u0009\u0009\u0009JC ODD
+;If carry is generated number is odd
+\u0009\u0009\u0009MOV DX,OFFSET MES1
+\u0009\u0009\u0009JMP EXIT
+ODD:
+\u0009\u0009\u0009MOV DX,OFFSET MES2
+EXIT:
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="oneszeros">";Program to count the logical ones and zeros in the given data
+
+;LOGIC: Copy number to AL
+;Rotate right. If carry
+;increment ONES , else
+;increment ZEROS
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DB 0AAH
+\u0009\u0009\u0009ONES DB ?
+\u0009\u0009\u0009ZEROS DB ?
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,0000H
+\u0009\u0009\u0009MOV AL,NUMBER
+;Copy NUMBER to AL
+\u0009\u0009\u0009MOV BL,08H
+;BL used as counter
+REPEAT:
+\u0009\u0009\u0009ROR AL,1
+\u0009\u0009\u0009JC ONE
+\u0009\u0009\u0009INC ZEROS
+\u0009\u0009\u0009JMP DOWN
+ONE:
+\u0009\u0009\u0009INC ONES
+DOWN:
+\u0009\u0009\u0009DEC BL
+\u0009\u0009\u0009JNZ REPEAT
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="palindrome">"; to check whether a string is palindrome or not
+
+; logic : compare the string with its reverse string
+
+.MODEL SMALL
+
+DISP MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+; to display a string
+
+READ MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,0AH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+.DATA
+MSG1 DB 0DH,0AH,'ENTER A STRING',0DH,0AH,'$'
+MSG2 DB 0DH,0AH,'STRING IS A PALINDROME',0DH,0AH,'$'
+MSG3 DB 0DH,0AH,'STRING IS N0T A PALINDROME',0DH,0AH,'$'
+BUFFER DB 80
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 80 DUP(0)
+TEMP DB 80
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 80 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009DISP MSG1
+\u0009\u0009\u0009READ BUFFER
+\u0009\u0009\u0009MOV CH,00H
+\u0009\u0009\u0009 CL,BUFFER+1
+\u0009\u0009\u0009LEA BX,BUFFER
+\u0009\u0009\u0009ADD BX,CX
+\u0009\u0009\u0009MOV SI,BX
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009LEA DI,TEMP+2
+BACK:
+\u0009\u0009\u0009MOV AL,[SI]
+\u0009\u0009\u0009MOV [DI],AL
+\u0009\u0009\u0009DEC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009LOOP BACK
+\u0009\u0009\u0009LEA SI,BUFFER+2
+\u0009\u0009\u0009LEA DI,TEMP+2
+\u0009\u0009\u0009MOV CL,BUFFER+1
+\u0009\u0009\u0009CLD
+\u0009\u0009\u0009REPE CMPSB
+\u0009\u0009\u0009JNZ SKIP1
+\u0009\u0009\u0009DISP MSG2
+\u0009\u0009\u0009JMP SKIP2
+SKIP1:
+\u0009\u0009\u0009DISP MSG3
+SKIP2:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="pointindex">"Pointer and Index Registers
+
+
+* Pointer registers are Instruction Pointer(IP),Base Pointer(BP) and Stack pointer(SP).
+
+* IP is associated with Code segment.
+
+* BP is associated with Data segment.
+
+* SP is associated with Stack segment.
+
+* Index registers are Source Index(SI) and Destination Index(DI).
+
+* These are used as general purpose registers and also for offset storage."</string>
+    <string name="pop">"POP
+
+memory Get 16 bit value from the stack.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009operand = SS:[SP] (top of the stack)
+\u0009\u0009\u0009*\u0009\u0009\u0009SP = SP + 2
+
+Example:
+MOV AX, 1234h
+PUSH AX
+POP DX \u0009\u0009\u0009; DX = 1234h
+RET
+
+______________________________________
+
+POPF
+
+Get flags register from the stack.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009flags = SS:[SP] (top of the stack)
+\u0009\u0009\u0009*\u0009\u0009\u0009SP = SP + 2"</string>
+    <string name="positive">";Program to check if the given byte /word is positive or negative
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUMBER DB 12H
+\u0009\u0009\u0009MES1 DB 10,13,'DATA IS POSITIVE','$'
+\u0009\u0009\u0009MES2 DB 10,13,'DATA IS NEGATIVE ','$'
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,NUMBER
+; Copy the number to AL
+\u0009\u0009\u0009ROL AL,1
+; Rotate the contents of AL
+\u0009\u0009\u0009JC NEGATIVE
+; If the number id negative the MSB will be 1 and hence carry
+\u0009\u0009\u0009MOV DX,OFFSET MES1
+\u0009\u0009\u0009JMP EXIT
+NEGATIVE:
+\u0009\u0009\u0009MOV DX,OFFSET MES2
+EXIT:
+\u0009\u0009\u0009 MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="push">"PUSH
+
+Store 16 bit value in the stack.
+
+Operands :
+REG
+SREG
+memory
+immediate
+Note: PUSH immediate works only on 80186 CPU and later!
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009SP = SP - 2
+\u0009\u0009\u0009*\u0009\u0009\u0009SS:[SP] (top of the stack) = operand
+Example:
+MOV AX, 1234h
+PUSH AX
+POP DX ; DX = 1234h
+RET
+
+______________________________________
+
+PUSHF
+
+Store flags register in the stack.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009SP = SP - 2
+\u0009\u0009\u0009*\u0009\u0009\u0009SS:[SP] (top of the stack) = flags"</string>
+    <string name="rcl">"RCL(Rotate Circularly Left)
+
+Rotate operand1 left through Carry Flag. The number of rotates is set by operand2. When immediate is greater then 1, assembler generates several RCL xx, 1 instructions because 8086 has machine code only for this instruction (the same principle works for all other shift/rotate instructions).
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+shift all bits left, the bit that goes off is set to CF and previous value of CF is inserted to the right-most position.
+
+Example:
+STC \u0009\u0009\u0009\u0009\u0009 ; set carry (CF=1).
+MOV AL, 1Ch \u0009\u0009\u0009 ; AL = 00011100b
+RCL AL, 1 \u0009\u0009\u0009 ; AL = 00111001b, CF=0.
+RET
+
+______________________________________
+
+RCR(Rotate Circularly Right)
+
+Rotate operand1 right through Carry Flag. The number of rotates is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+shift all bits right, the bit that goes off is set to CF and previous value of CF is inserted to the left-most position.
+
+Example:
+STC \u0009\u0009\u0009\u0009\u0009 ; set carry (CF=1).
+MOV AL, 1Ch \u0009\u0009\u0009 ; AL = 00011100b
+RCR AL, 1 \u0009\u0009\u0009 ; AL = 10001110b, CF=0.
+RET"</string>
+    <string name="readdate">";Program to read system date
+
+.MODEL SMALL
+.STACK 100H
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,2A00H
+;get date from dos
+\u0009\u0009\u0009INT 21H
+;CX year (1980 - 2099)
+;DH month
+;DL day
+;AL day of week 0 == sun
+\u0009\u0009\u0009PUSH CX
+;save year
+\u0009\u0009\u0009PUSH DX
+;save month and day
+\u0009\u0009\u0009MOV AH,0
+\u0009\u0009\u0009MOV AL,DL;day
+\u0009\u0009\u0009MOV CL,10
+\u0009\u0009\u0009DIV CL
+\u0009\u0009\u0009PUSH AX
+;save tens (al) and units (ah) of day
+\u0009\u0009\u0009OR AL,30H
+;tens of day to ascii
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP AX
+\u0009\u0009\u0009OR AH,30H
+;units of day to ascii
+\u0009\u0009\u0009MOV DL,AH
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009CALL DO_SLASH
+\u0009\u0009\u0009POP DX
+;restore month (dh)
+\u0009\u0009\u0009MOV AH,0
+\u0009\u0009\u0009MOV AL,DH ;month
+\u0009\u0009\u0009MOV CL,10
+\u0009\u0009\u0009DIV CL
+\u0009\u0009\u0009PUSH AX
+;save tens (al) and units (ah) of MONTH
+\u0009\u0009\u0009OR AL,30H
+;tens of month to ascii
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP AX
+\u0009\u0009\u0009OR AH,30H
+;units of month to ascii
+\u0009\u0009\u0009MOV DL,AH
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009CALL DO_SLASH
+\u0009\u0009\u0009POP AX ;year
+\u0009\u0009\u0009MOV DX,0
+;clr ms byte of dividend
+\u0009\u0009\u0009MOV CX,1000
+;and divide by 1000 to get THOUSANDS
+\u0009\u0009\u0009DIV CX
+;quotient in ax, remainder in dx
+\u0009\u0009\u0009PUSH DX
+;save remainder
+\u0009\u0009\u0009OR AL,30H
+;into ascii
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP AX
+;restore remainder
+\u0009\u0009\u0009MOV DX,0
+;clr msb
+\u0009\u0009\u0009MOV CX,100
+;get hundreds
+\u0009\u0009\u0009DIV CX
+;quotient in ax, remainder in dx
+\u0009\u0009\u0009PUSH DX
+;save remainder
+\u0009\u0009\u0009OR AL,30H
+;into ASCII
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP AX
+;restore remainder
+\u0009\u0009\u0009MOV DX,0
+;clr msb
+\u0009\u0009\u0009MOV CX,10
+;get tens
+\u0009\u0009\u0009DIV CX
+;quotient in ax, remainder in dx
+\u0009\u0009\u0009PUSH DX
+;save remainder
+\u0009\u0009\u0009OR AL,30H
+;into ascii
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP AX
+;restore remainder (units)
+\u0009\u0009\u0009OR AL,30H
+;into ascii
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009MOV DL,AL
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009MOV AX,4C00H
+;dos terminate program function
+\u0009\u0009\u0009INT 21H
+;terminate the program
+\u0009\u0009\u0009ENDP
+
+DO_SLASH PROC NEAR
+\u0009\u0009\u0009PUSH AX
+\u0009\u0009\u0009PUSH DX
+\u0009\u0009\u0009MOV AH,02
+\u0009\u0009\u0009MOV DL,'/'
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP DX
+\u0009\u0009\u0009POP AX
+\u0009\u0009\u0009RET
+\u0009\u0009\u0009ENDP
+END START
+END"</string>
+    <string name="readtime">";Program to read system time
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009HOUR DB ?
+\u0009\u0009\u0009MINUTE DB ?
+
+.CODE
+\u0009\u0009\u0009DISCHAR MACRO CHAR
+\u0009\u0009\u0009PUSH AX
+\u0009\u0009\u0009PUSH DX
+\u0009\u0009\u0009MOV DL,CHAR
+\u0009\u0009\u0009MOV AH,02
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009POP DX
+\u0009\u0009\u0009POP AX
+\u0009\u0009\u0009ENDM
+
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009CALL TIME
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+
+\u0009\u0009\u0009TIME PROC NEAR
+\u0009\u0009\u0009MOV AH,2CH
+;function to read system time
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009MOV HOUR,CH
+\u0009\u0009\u0009MOV MINUTE,CL
+\u0009\u0009\u0009CMP CH,12
+\u0009\u0009\u0009JB DOWN
+\u0009\u0009\u0009SUB CH,12
+
+DOWN:
+\u0009\u0009\u0009MOV AL,CH
+\u0009\u0009\u0009MOV AH,00H
+\u0009\u0009\u0009AAM
+\u0009\u0009\u0009ADD AX,3030H
+\u0009\u0009\u0009DISCHAR AH
+\u0009\u0009\u0009DISCHAR AL
+\u0009\u0009\u0009DISCHAR ':'
+\u0009\u0009\u0009MOV AL,CL
+\u0009\u0009\u0009MOV AH,00H
+\u0009\u0009\u0009AAM
+\u0009\u0009\u0009ADD AX,3030H
+\u0009\u0009\u0009DISCHAR AH
+\u0009\u0009\u0009DISCHAR AL
+\u0009\u0009\u0009DISCHAR ' '
+\u0009\u0009\u0009CMP HOUR,12
+\u0009\u0009\u0009JB AM
+\u0009\u0009\u0009DISCHAR 'P'
+\u0009\u0009\u0009JMP DOWN1
+
+AM:
+\u0009\u0009\u0009DISCHAR 'A'
+
+DOWN1:
+\u0009\u0009\u0009DISCHAR 'M'
+\u0009\u0009\u0009RET
+\u0009\u0009\u0009TIME ENDP
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="reps">"Repeat
+
+Repeat following MOVSB, MOVSW, LODSB, LODSW, STOSB, STOSW instructions multiple times.
+
+Operands :
+chain instruction
+
+Algorithm:
+Check termination condition
+if satisfied :
+\u0009\u0009\u0009*\u0009\u0009\u0009exit from REP cycle
+else
+\u0009\u0009\u0009*\u0009\u0009\u0009do following 'chain instruction'
+\u0009\u0009\u0009*\u0009\u0009\u0009CX = CX - 1
+\u0009\u0009\u0009*\u0009\u0009\u0009go back to check_cx
+
+
+
+Repeat type \u0009\u0009\u0009\u0009|\u0009 Termination Condition
+REP \u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009|\u0009\u0009\u0009 CX=0
+REPE/REPNZ \u0009\u0009|\u0009\u0009\u0009 CX=0 or Z=1
+REPNE/REPZ \u0009\u0009|\u0009\u0009\u0009 CX=0 or Z=0"</string>
+    <string name="ret">"RET(Return)
+
+Return from near procedure.
+
+Operands :
+No operands or even immediate
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Pop from stack:
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009IP
+\u0009\u0009\u0009*\u0009\u0009\u0009if immediate operand is present: SP = SP + operand
+
+Example:
+
+CALL p1
+.
+ADD AX, 1
+.
+RET \u0009\u0009\u0009\u0009; return to OS.
+
+p1 PROC NEAR \u0009 ; procedure declaration.
+\u0009 MOV AX, 1234h
+\u0009 RET \u0009\u0009 ; return to caller.
+\u0009 ENDP
+
+________________________________________ RETF(Return from Far procedure)
+
+Operands :
+No operands or even immediate
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Pop from stack:
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009IP
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009CS
+\u0009\u0009\u0009*\u0009\u0009\u0009if immediate operand is present: SP = SP + operand"</string>
+    <string name="reverse">"; to display the reverse of the string
+
+; logic : accessing the string from the end and
+; storing it in a new string and displaying
+
+.MODEL SMALL
+
+DISP MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+; to display the string
+
+READ MACRO MEM
+\u0009\u0009\u0009LEA DX,MEM
+\u0009\u0009\u0009MOV AH,0AH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009ENDM
+
+.DATA
+MSG1 DB 0DH,0AH,'ENTER A STRING',0DH,0AH,'$'
+MSG2 DB 0DH,0AH,'REVERSED STRING',0DH,0AH,'$'
+STRING DB 80
+\u0009\u0009\u0009DB 0
+\u0009\u0009\u0009DB 80 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009DISP MSG1
+\u0009\u0009\u0009READ STRING
+\u0009\u0009\u0009DISP MSG2
+\u0009\u0009\u0009MOV CH,00H
+\u0009\u0009\u0009MOV CL,STRING+1
+\u0009\u0009\u0009LEA BX,STRING
+\u0009\u0009\u0009ADD BX,CX
+\u0009\u0009\u0009MOV SI,BX
+\u0009\u0009\u0009INC SI
+ BACK:
+\u0009\u0009\u0009MOV DL,[SI]
+\u0009\u0009\u0009MOV AH,02H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009DEC SI
+\u0009\u0009\u0009LOOP BACK
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="rol">"ROL(Rotate Left)
+
+Rotate operand1 left. The number of rotates is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+
+
+Algorithm:
+shift all bits left, the bit that goes off is set to CF and the same bit is inserted to the right-most position.
+
+Example:
+MOV AL, 1Ch \u0009 ; AL = 00011100b
+ROL AL, 1 \u0009\u0009 ; AL = 00111000b, CF=0.
+RET
+
+________________________________________
+
+ROR(Rotate Right)
+
+Rotate operand1 right. The number of rotates is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+shift all bits right, the bit that goes off is set to CF and the same bit is inserted to the left-most position.
+
+Example:
+MOV AL, 1Ch \u0009 ; AL = 00011100b
+ROR AL, 1 \u0009\u0009 ; AL = 00001110b, CF=0.
+RET"</string>
+    <string name="sal">"SAL(Shift Arithmetic Left)
+
+Shift Arithmetic operand1 Left. The number of shifts is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Shift all bits left, the bit that goes off is set to CF.
+\u0009\u0009\u0009*\u0009\u0009\u0009Zero bit is inserted to the right-most position.
+
+Example:
+MOV AL, 0E0h ; AL = 11100000b
+SAL AL, 1 ; AL = 11000000b, CF=1.
+RET
+
+______________________________________
+
+SHL(Shift Left)
+
+Shift operand1 Left. The number of shifts is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Shift all bits left, the bit that goes off is set to CF.
+\u0009\u0009\u0009*\u0009\u0009\u0009Zero bit is inserted to the right-most position.
+
+Example:
+MOV AL, 11100000b
+SHL AL, 1 ; AL = 11000000b, CF=1.
+RET"</string>
+    <string name="sar">"SAR(Shift Arithmetic Right)
+
+Shift Arithmetic operand1 Right. The number of shifts is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Shift all bits right, the bit that goes off is set to CF.
+\u0009\u0009\u0009*\u0009\u0009\u0009The sign bit that is inserted to the left-most position has the same value as before shift.
+
+Example:
+MOV AL, 0E0h ; AL = 11100000b
+SAR AL, 1 ; AL = 11110000b, CF=0.
+MOV BL, 4Ch ; BL = 01001100b
+SAR BL, 1 ; BL = 00100110b, CF=0.
+RET
+
+______________________________________
+
+SHR(Shift Right)
+
+Shift operand1 Right. The number of shifts is set by operand2.
+
+Operands :
+memory, immediate
+REG, immediate
+memory, CL
+REG, CL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009Shift all bits right, the bit that goes off is set to CF.
+\u0009\u0009\u0009*\u0009\u0009\u0009Zero bit is inserted to the left-most position.
+
+Example:
+MOV AL, 00000111b
+SHR AL, 1 ; AL = 00000011b, CF=1.
+RET"</string>
+    <string name="scas">"SCAS(Scan String)
+
+It is used only with the suffix to specify whether a character is represented in bytes or words.
+So the effective instructions will be SCASB and SCASW.
+Generally these instructions are preceded by the repeat instructions to scan the entire string
+
+_______________________________________
+
+SCASB(Scan String Byte)
+
+Compare bytes: AL from ES:[DI].
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] - AL
+\u0009\u0009\u0009*\u0009\u0009\u0009set flags according to result:
+\u0009\u0009\u0009\u0009\u0009\u0009OF, SF, ZF, AF, PF, CF
+\u0009\u0009\u0009*\u0009\u0009\u0009 if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009 DI = DI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 1
+
+______________________________________
+
+SCASW(Scan String Word)
+
+Compare words: AX from ES:[DI].
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] - AX
+\u0009\u0009\u0009*\u0009\u0009\u0009set flags according to result:
+\u0009\u0009\u0009\u0009\u0009\u0009OF, SF, ZF, AF, PF, CF
+\u0009\u0009\u0009*\u0009\u0009\u0009 if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009 DI = DI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 2"</string>
+    <string name="searcharray">";Program to find number in an array
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009ARRAY DB 63H,32H,45H,75H,12H,42H,09H,14H,56H,38H
+\u0009\u0009\u0009SEARCH DB 09H
+;the number to be searched
+\u0009\u0009\u0009POS DB ?
+;position of the searched number
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009MOV CH,000AH
+;count of numbers in array
+\u0009\u0009\u0009LEA DI,ARRAY
+\u0009\u0009\u0009MOV AL,SEARCH
+\u0009\u0009\u0009CLD
+\u0009\u0009\u0009REPNE SCAS ARRAY
+\u0009\u0009\u0009MOV AL,10
+\u0009\u0009\u0009SUB AL,CL
+\u0009\u0009\u0009MOV POS,AL
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="segment">"Segment Registers
+
+
+* Physical address of 8086 is 20 bits wide.
+
+* Since the registers are 16bit wide, memory segmentation is used.
+
+* The 1 Megabytes memory is divided into segments with each memory segment having a size 2^16=64kBytes.
+
+* Hence we can access any location within the segment using 16 bits.
+
+* 8086 allows only 4 active segments at a time.
+
+* To select the segments we have 4 registers and they are Code segment register, Data segment register, Stack segment register and Extra segment register.
+
+* These registers are used to hold the upper 16 bits of the starting address of the four memory segments.
+
+* To generate 20 bit physical address rotate the segment base address in hexadecimal by 1 unit to the left and add the offset .
+
+* Consider an example here
+\u0009 MOV [BX],AX given AX=1234H ,
+ BX = 5678H, DS=4567H
+
+STEP 1: Rotate the content of DS by 1 unit to the left. We get 45670H
+
+STEP 2: Add the offset in BX.
+
+\u0009 45670H DS
+\u0009\u0009 5678H BX
+\u0009 -------------
+\u0009 4ACE8H Physical Address"</string>
+    <string name="seven">".MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009PORTA EQU 120H
+\u0009\u0009\u0009PORTB EQU 121H
+\u0009\u0009\u0009PORTC EQU 122H
+\u0009\u0009\u0009CWRD EQU 123H
+\u0009\u0009\u0009TABLE DB 8CH,0C7H,86H,89H
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,DATA
+; intialise data segment
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,80H
+; initialise 8255 portb and portc as o/p
+\u0009\u0009\u0009MOV DX,CWRD
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009MOV BH,04
+; BH = no of digitsto be displayed
+\u0009\u0009\u0009LEA SI,TABLE
+; SI = starting address of lookup table
+
+NEXTDIGIT:
+\u0009\u0009\u0009MOV CL,08
+; CL = no of segments = 08
+\u0009\u0009\u0009MOV AL,[SI]
+NEXTBIT:
+\u0009\u0009\u0009ROL AL,01
+\u0009\u0009\u0009MOV CH,AL
+; save al
+\u0009\u0009\u0009MOV DX,PORTB
+;one bit is sent out on portb
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009MOV AL,01
+\u0009\u0009\u0009MOV DX,PORTC
+;one clock pulse sent on pc0
+
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009DEC AL
+\u0009\u0009\u0009MOV DX,PORTC
+
+\u0009\u0009\u0009OUT DX,AL
+\u0009\u0009\u0009MOV AL,CH
+; get the seven segment code back in al
+\u0009\u0009\u0009DEC CL
+; send all 8 bits,thus one digit is displayed
+\u0009\u0009\u0009JNZ NEXTBIT
+\u0009\u0009\u0009DEC BH
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009JNZ NEXTDIGIT
+;display all the four digits
+\u0009\u0009\u0009MOV AH,4CH
+;exit to dos
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="smallest">";Program to find the smallest number
+
+;LOGIC:NUM contains the sequence of
+;numbers.CX contains the count of numbers.
+;The first number is moved to AX,then
+;the rest of the numbers are compared to
+;it.If the number is lesser than AX, then
+;it is moved to AX. Finally SMALL contains the
+;smallest number.
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUM DW 0010H,52H,30H,40H,50H
+\u0009\u0009\u0009SMALL DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV CX,05H
+\u0009\u0009\u0009LEA SI,NUM
+\u0009\u0009\u0009MOV AX,[SI]
+\u0009\u0009\u0009DEC CX
+
+UP:
+\u0009\u0009\u0009CMP AX,[SI+2]
+\u0009\u0009\u0009JB CONTINUE
+;if number at SI+2 is lesser than number
+;at AX,then it is moved to AX
+\u0009\u0009\u0009MOV AX,[SI+2]
+
+CONTINUE:
+\u0009\u0009\u0009ADD SI,2
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV SMALL,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="square">";Program to find the square of a number
+
+ ; SQUARE is used to hold the square of NUMBER
+;LOGIC: Load the NUMBER to AX.Copy the NUMBER
+;from AX to BX. Multiply the data in AX with
+;data in BX and store in BX .Copy the result to SQUARE
+
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009NUMBER DW 0004H; Set NUMBER to 04H
+\u0009\u0009\u0009SQUARE DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009 MOV DS,AX
+\u0009\u0009\u0009 MOV AX,NUMBER
+\u0009\u0009\u0009 MOV BX,AX
+\u0009\u0009\u0009 MUL BX
+\u0009\u0009\u0009 MOV SQUARE,AX
+\u0009\u0009\u0009 MOV AH,4CH
+\u0009\u0009\u0009 INT 21H
+\u0009\u0009\u0009 END START
+\u0009\u0009\u0009END"</string>
+    <string name="stos">"STOS(Store String)
+
+It is used only with the suffix to specify whether a character is represented in bytes or words.
+So the effective instructions will be STOSB and STOSW.
+Generally these instructions are preceded by the repeat instructions to compare the entire string
+
+_______________________________________
+
+STOSB(Store String Byte)
+
+Store byte in AL into ES:[DI]. Update SI.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] = AL
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 1
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 1
+
+Example:
+LEA DI, a1
+MOV AL, 12h
+MOV CX, 5
+REP STOSB
+.
+RET
+
+a1 DB 5 dup(0)
+
+_______________________________________
+
+STOSW(Store String Word)
+
+Store byte in A into ES:[DI]. Update SI.
+
+Operands : NIL
+
+Algorithm:
+\u0009\u0009\u0009*\u0009\u0009\u0009ES:[DI] = AX
+\u0009\u0009\u0009*\u0009\u0009\u0009if DF = 0 then
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI + 2
+\u0009\u0009\u0009\u0009\u0009\u0009else
+\u0009\u0009\u0009\u0009\u0009\u0009*\u0009\u0009\u0009DI = DI - 2
+
+Example:
+LEA DI, a1
+MOV AX, 1234h
+MOV CX, 5
+REP STOSW
+.
+RET
+
+a1 DW 5 dup(0)"</string>
+    <string name="sub">"SUB(Subtract)
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+Algorithm:
+operand1 = operand1 - operand2
+
+Example:
+MOV AL, 5
+SUB AL, 1 \u0009\u0009 ; AL = 4
+RET
+
+______________________________________
+
+SBB(Subtract with Borrow)
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+Algorithm:
+operand1 = operand1 - operand2 - CF
+
+Example:
+STC
+MOV AL, 5
+SBB AL, 3 \u0009 ; AL = 5 - 3 - 1 = 1
+RET"</string>
+    <string name="subtraction">";16 bit subtraction
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM DW 4567H,2345H
+\u0009\u0009\u0009DIF DW 1 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009CLC
+\u0009\u0009\u0009LEA SI,NUM
+\u0009\u0009\u0009MOV AX,[SI]
+\u0009\u0009\u0009SBB AX,[SI+2]
+\u0009\u0009\u0009MOV DIF,AX
+;Store the result
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END
+
+
+;32 bit subtraction
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009NUM1 DW 2345H,6762H
+\u0009\u0009\u0009NUM2 DW 1111H,1111H
+\u0009\u0009\u0009DIF DW 2 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009LEA SI,NUM1
+\u0009\u0009\u0009LEA DI,NUM2
+\u0009\u0009\u0009MOV AX,[SI]
+\u0009\u0009\u0009MOV BX,[DI]
+\u0009\u0009\u0009SUB AX,BX
+\u0009\u0009\u0009MOV DIF,AX
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC DI
+\u0009\u0009\u0009INC DI
+;Update DI to point
+; the MSB of NUM2
+\u0009\u0009\u0009MOV AX,[SI]
+\u0009\u0009\u0009MOV BX,[DI]
+\u0009\u0009\u0009SBB AX,BX
+; Subtract with borrow
+; from BX to AX
+\u0009\u0009\u0009MOV DIF+2,AX
+; Store the MSB result
+;in DIF+2
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="subtractn">";Program to subtract n numbers
+
+;LOGIC: SI points to the first number in ARR
+;The first number in ARR is moved to AX.
+;The number in SI is subtracted from AX.
+;SI is subsequently incremented until
+;the counter CX goes to zero
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009ARR DW 50H,10H,20H,10H,05H
+\u0009\u0009\u0009LEN EQU 05H
+\u0009\u0009\u0009DIF DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009LEA SI,ARR
+\u0009\u0009\u0009CLC
+\u0009\u0009\u0009MOV CX,LEN-1
+\u0009\u0009\u0009MOV AX,[SI]
+
+UP:
+\u0009\u0009\u0009SUB AX,[SI+2]
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009INC SI
+\u0009\u0009\u0009DEC CX
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009MOV DIF,AX
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="test">"TEST
+
+Logical AND between all bits of two operands for flags only. These flags are effected: ZF, SF, PF. Result is not stored anywhere.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+memory, immediate
+REG, immediate
+
+These rules apply:
+1 AND 1 = 1
+1 AND 0 = 0
+0 AND 1 = 0
+0 AND 0 = 0
+
+Example:
+MOV AL, 00000101b
+TEST AL, 1 \u0009\u0009 ; ZF = 0.
+TEST AL, 10b \u0009\u0009 ; ZF = 1.
+RET
+
+_______________________________________
+
+WAIT
+
+Causes the processor to wait for the completion signal from the coprocessor
+
+Operands : NIL"</string>
+    <string name="title_activity_hardware">Hardware Implementation</string>
+    <string name="title_activity_image__view">Addressing Modes</string>
+    <string name="title_activity_instruction_set">Instruction Set</string>
+    <string name="title_activity_program_menu">Program Menu</string>
+    <string name="title_activity_registers">Registers and Addressing Modes</string>
+    <string name="transfer">"; to transfer string
+
+.MODEL SMALL
+
+.DATA
+STR1 DB 'HOW ARE YOU'
+LEN EQU $-STR1
+STR2 DB 20 DUP(0)
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV ES,AX
+\u0009\u0009\u0009LEA SI,STR1
+\u0009\u0009\u0009LEA DI,STR2
+\u0009\u0009\u0009MOV CX,LEN
+\u0009\u0009\u0009CLD
+\u0009\u0009\u0009REP MOVSB
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="twofive">";Program to check if the given data is a 2 out of 5 code or not
+
+.MODEL SMALL
+
+.DATA
+NUMBER DW 0002H
+MES1 DB 10,13,'VALID 2 0UT OF 5 CODE $'
+MES2 DB 10,13,'N0T A VALID 2 0UT OF 5 CODE $'
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AX,NUMBER
+\u0009\u0009\u0009MOV BX,0H
+\u0009\u0009\u0009AND AX,0E0H
+\u0009\u0009\u0009JNZ DISP
+\u0009\u0009\u0009MOV CL,05
+\u0009\u0009\u0009MOV AX,NUMBER
+UP:
+\u0009\u0009\u0009ROR AX,1
+\u0009\u0009\u0009JNC DOWN
+\u0009\u0009\u0009INC BX
+DOWN:
+\u0009\u0009\u0009DEC CL
+\u0009\u0009\u0009JNZ UP
+\u0009\u0009\u0009CMP BX,02H
+\u0009\u0009\u0009JNC DISP
+\u0009\u0009\u0009LEA DX,MES1
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009JMP EXIT
+DISP:
+\u0009\u0009\u0009LEA DX,MES2
+\u0009\u0009\u0009MOV AH,09H
+\u0009\u0009\u0009INT 21H
+EXIT:
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="word">";Byte and word data transfer in different addressing modes
+
+.MODEL SMALL
+
+.DATA
+\u0009\u0009\u0009DATA1 DB 23H
+\u0009\u0009\u0009DATA2 DW 1234H
+\u0009\u0009\u0009DATA3 DB 0H
+\u0009\u0009\u0009DATA4 DW 0H
+\u0009\u0009\u0009DATA5 DW 2345H,6789H
+
+.CODE
+START:
+\u0009\u0009\u0009 MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+\u0009\u0009\u0009MOV AL,25X
+\u0009\u0009\u0009MOV AX,2345H
+\u0009\u0009\u0009MOV BX,AX
+\u0009\u0009\u0009MOV CL,AL
+\u0009\u0009\u0009MOV AL,DATA1
+\u0009\u0009\u0009MOV AX,DATA2
+\u0009\u0009\u0009MOV DATA3,AL
+\u0009\u0009\u0009MOV DATA4,AX
+\u0009\u0009\u0009MOV BX,OFFSET DATA5
+\u0009\u0009\u0009MOV AX,[BX]
+;AX(register indirect addressing)
+\u0009\u0009\u0009MOV DI,02H
+\u0009\u0009\u0009MOV AX,[BX+DI}
+;AX(base plus indirect addressing)
+\u0009\u0009\u0009MOV AX,[BX+0002H]
+\u0009\u0009\u0009MOV AL,[DI+2]
+;register relative addressing
+\u0009\u0009\u0009MOV AX,[BX+DI+0002H]
+;into AX(16 bit)
+\u0009\u0009\u0009MOV AH,4CH
+\u0009\u0009\u0009INT 21H
+END START
+END"</string>
+    <string name="writefile">";Program to write into a file
+
+.MODEL SMALL
+.DATA
+\u0009\u0009\u0009TEXT DB VTU
+\u0009\u0009\u0009FILENAME DB NAME.TXT,0
+\u0009\u0009\u0009HANDLER DW ?
+
+.CODE
+START:
+\u0009\u0009\u0009MOV AX,@DATA
+\u0009\u0009\u0009MOV DS,AX
+;create file.
+\u0009\u0009\u0009MOV AH, 3CH
+\u0009\u0009\u0009MOV CX, 0
+\u0009\u0009\u0009MOV DX, OFFSET FILENAME
+\u0009\u0009\u0009INT 21H
+;preserve file handler returned.
+\u0009\u0009\u0009MOV HANDLER, AX
+;write string.
+\u0009\u0009\u0009MOV AH, 40H
+\u0009\u0009\u0009MOV BX, HANDLER
+\u0009\u0009\u0009MOV CX, 3
+;string length.
+\u0009\u0009\u0009MOV DX, OFFSET TEXT
+\u0009\u0009\u0009INT 21H
+;close file (or data will be lost).
+\u0009\u0009\u0009MOV AH, 3EH
+\u0009\u0009\u0009MOV BX, HANDLER
+\u0009\u0009\u0009INT 21H
+;finish the program.
+\u0009\u0009\u0009MOV AX,4C00H
+\u0009\u0009\u0009INT 21H
+\u0009\u0009\u0009END START
+\u0009\u0009\u0009END"</string>
+    <string name="xchg">"Exchange
+
+Exchange values of two operands.
+
+Operands :
+REG, memory
+memory, REG
+REG, REG
+
+Algorithm:
+operand1 *-----* operand2
+
+Example:
+MOV AL, 5
+MOV AH, 2
+XCHG AL, AH \u0009\u0009 ; AL = 2, AH = 5
+XCHG AL, AH \u0009\u0009 ; AL = 5, AH = 2
+RET"</string>
+    <string name="xlat">"XLATB
+Translate byte from table.
+Copy value of memory byte at DS:[BX + unsigned AL] to AL register.
+
+Operands : NIL
+
+Algorithm:
+AL = DS:[BX + unsigned AL]
+
+Example:
+LEA BX, dat
+MOV AL, 2
+XLATB ; AL = 33h
+.
+RET
+
+dat DB 11h, 22h, 33h, 44h, 55h"</string>
+
+    <string name="describe1"> AD0-AD15 (I/O): Address Data Bus  [PIN 2 - PIN 16, PIN 39]\n
+
+These lines constitute the time multiplexed memory/IO address during the first clock cycle (T1)
+ and data during T2, T3 and T4 clock cycles.\n
+        A0 is analogous to BHE for the lower byte of the data bus,
+ pins D0-D7. \n
+        A0 bit is Low during T1 state when a byte is to be transferred on the
+ lower portion of the bus in memory or I/O operations.\n
+        8-bit oriented devices tied to the lower half would
+ normally use A0 to condition chip select functions. \n
+        These lines are active high and float to tri-state
+ during interrupt acknowledge and local bus "Hold acknowledge". \n</string>
+
+    <string name="describe2"> A19/S6, A18/S5, A17/S4, A16/S3 (0): Address/Status  [PIN 35 - PIN 38]\n
+During T1 state these lines are the four most significant address lines for memory operations.\n
+During I/O operations these lines are low. During memory and I/O operations,\n
+status information is available on these lines during T2, T3, and T4 states:\n
+The status of the interrupt enable flag bit is updated at the beginning of each cycle.\n
+The status of the flag is indicated through this bus. \n</string>
+
+    <string name="describe3"> S6:  [PIN 35]\n
+When Low, it indicates that 8086 is in control of the bus.\n
+During a "Hold acknowledge" clock period, the 8086 tri-states the S6 pin and
+thus allows another bus master to take control of the status bus.\n </string>
+
+    <string name="describe4"> S3 and S4:  [PIN 38, PIN 37]\n
+Lines are decoded as follows:\n
+A17/S4	A16/S3	Function\n
+  0	  	  0		  Extra segment access\n
+  0	  	  1		  Stack segment access\n
+  1	  	  0		  Code segment access\n
+  1	  	  1		  Data segment access\n
+\n
+After the first clock cycle of an instruction execution,
+        the A17/S4 and A16/S3 pins specify which segment register generates the segment portion of the 8086 address.\n
+Thus by decoding these lines and using the decoder outputs as chip selects for memory chips,
+        up to 4 Megabytes (one Mega per segment) of memory can be accesses.\n
+This feature also provides a degree of protection by preventing write operations to one segment from erroneously\n
+overlapping into another segment and destroying information in that segment. \n</string>
+
+    <string name="describe5"> BHE /S7 (O): Bus High Enable/Status  [PIN 34]\n
+During T1 state theBHE should be used to enable data onto the most significant half of the data bus, pins D15 - D8.\n
+Eight-bit oriented devices tied to the upper half of the bus would normally use BHE to control chip select functions.\n
+BHE is Low during T1 state of read, write and interrupt acknowledge cycles
+        when a byte is to be transferred on the high portion of the bus.\n
+The S7 status information is available during T2, T3 and T4 states.\n
+The signal is active Low and floats to 3-state during "hold" state.\n
+his pin is Low during T1 state for the first interrupt acknowledge cycle.\n</string>
+
+    <string name="describe6"> RD (O): READ  [PIN 32]\n
+The Read strobe indicates that the processor is performing a memory or I/O read cycle.\n
+This signal is active low during T2 and T3 states and the Tw states of any read cycle.\n
+This signal floats to tri-state in "hold acknowledge cycle". \n</string>
+
+    <string name="describe7"> TEST (I) [PIN 23]\n
+TEST pin is examined by the "WAIT" instruction. If the TEST pin is Low, execution continues.\n
+Otherwise the processor waits in an "idle" state.\n
+This input is synchronized internally during each clock cycle on the leading edge of CLK. \n</string>
+
+    <string name="describe8"> INTR (I): Interrupt Request  [PIN 18]\n
+It is a level triggered input which is sampled during the last clock cycle
+        of each instruction to determine if the processor should enter into an interrupt acknowledge operation.\n
+A subroutine is vectored to via an interrupt vector look up table located in system memory.\n
+It can be internally masked by software resetting the interrupt enable bit INTR is internally synchronized.\n
+This signal is active HIGH.\n</string>
+
+    <string name="describe9"> NMI (I): Non-Maskable Interrupt  [PIN 17]
+An edge triggered input, causes a type-2 interrupt.\n
+A subroutine is vectored to via the interrupt vector look up table located in system memory.\n
+NMI is not maskable internally by software.\n
+        A transition from a LOW to HIGH on this pin initiates the interrupt at the end of the current instruction.\n
+This input is internally synchronized. \n</string>
+
+    <string name="describe10"> RST (I): Reset  [PIN 21]
+Reset causes the processor to immediately terminate its present activity.\n
+To be recognised, the signal must be active high for at least four clock cycles,
+        except after power-on which requires a 50 Micro second pulse.\n
+It causes the 8086 to initialize registers DS, SS, ES, IP and flags to all zeros. It also initializes CS to FFFF H.\n
+Upon removal of the RESET signal from the RESET pin,
+        the 8086 will fetch its next instruction from the 20 bit physical address FFFF0H.\n
+The reset signal to 8086 can be generated by the 8284. (Clock generation chip).\n
+To guarantee reset from power-up, the reset input must remain below 1.5 volts for 50 Micro seconds
+        after Vcc has reached the minimum supply voltage of 4.5V.\n </string>
+
+    <string name="describe11"> READY: Ready (I)  [PIN 22]\n
+Ready is the acknowledgement from the addressed memory or I/O device that it will complete the data transfer.\n
+The READY signal from memory or I/O is synchronized by the 8284 clock generator to form READY. This signal is active HIGH.\n
+The 8086 READY input is not synchronized.\n
+Correct operation is not guaranteed if the setup and hold times are not met.\n</string>
+
+    <string name="describe12"> CLK (I): Clock  [PIN 19]\n
+Clock provides the basic timing for the processor and bus controller.\n
+It is asymmetric with 33% duty cycle to provide optimized internal timing.\n
+Minimum frequency of 2 MHz is required, since the design of 8086 processors incorporates dynamic cells.\n
+The maximum clock frequencies of the 8086-4, 8086 and 8086-2 are4MHz, 5MHz and 8MHz respectively.\n
+Since the 8086 does not have on-chip clock generation circuitry,
+and 8284 clock generator chip must be connected to the 8086 clock pin.\n
+The crystal connected to 8284 must have a frequency 3 times the 8086 internal frequency.\n
+The 8284 clock generation chip is used to generate READY, RESET and CLK.\n </string>
+
+    <string name="describe13"> MN/MX (I): Maximum / Minimum  [PIN 33]\n
+This pin indicates what mode the processor is to operate in.\n
+In minimum mode, the 8086 itself generates all bus control signals.\n
+In maximum mode the three status signals are to be decoded to generate all the bus control signals.\n
+Minimum Mode Pins The following 8 pins function descriptions are for the 8086 in minimum mode; MN/ MX = 1.\n </string>
+
+    <string name="describe14"> M/IO (O): Status line \n [PIN 28]
+This pin is used to distinguish a memory access or an I/O accesses.\n
+When this pin is Low, it accesses I/O and when high it access memory.\n
+M / IO becomes valid in the T4 state preceding a bus cycle and remains valid until the final T4 of the cycle.\n
+M/IO floats to 3 - state OFF during local bus "hold acknowledge".\n </string>
+
+    <string name="describe15"> WR (O): Write  [PIN 29]
+Indicates that the processor is performing a write memory or write IO cycle,
+depending on the state of the M /IOsignal. WR is active for T2, T3 and Tw of any write cycle.\n
+It is active LOW, and floats to 3-state OFF during local bus "hold acknowledge ".\n </string>
+
+    <string name="describe16"> INTA (O): Interrupt Acknowledge  \n[PIN 24]
+It is used as a read strobe for interrupt acknowledge cycles.\n
+It is active LOW during T2, T3, and T4 of each interrupt acknowledge cycle.\n </string>
+
+    <string name="describe17"> ALE (O): Address Latch Enable  [PIN 25]\n
+ALE is provided by the processor to latch the address into the 8282/8283 address latch.\n
+It is an active high pulse during T1 of any bus cycle. ALE signal is never floated.\n </string>
+
+    <string name="describe18"> D T/R (O): DATA Transmit/Receive  \n[PIN 27]
+In minimum mode, 8286/8287 transceiver is used for the data bus.\n
+DT/ R is used to control the direction of data flow through the transceiver.\n
+This signal floats to tri-state off during local bus "hold acknowledge".\n</string>
+
+    <string name="describe19"> DEN (O): Data Enable  [PIN 26]
+It is provided as an output enable for the 8286/8287 in a minimum system which uses the transceiver.\n
+DEN is active LOW during each memory and IO access. \n
+        It will be low beginning with T2 until the middle of T4, while for a write cycle,
+it is active from the beginning of T2 until the middle of T4.\n
+It floats to tri-state off during local bus "hold acknowledge". \n</string>
+
+    <string name="describe20"> HOLD and HLDA (I/O): Hold and Hold Acknowledge  [PIN 31, PIN 30]
+Hold indicates that another master is requesting a local bus "HOLD".\n
+To be acknowledged, HOLD must be active HIGH.\n
+The processor receiving the "HOLD " request will issue HLDA (HIGH) as an acknowledgement in the middle of the T1-clock cycle.
+Simultaneous with the issue of HLDA, the processor will float the local bus and control lines.\n
+After "HOLD" is detected as being Low, the processor will lower the HLDA and when the processor needs to run another cycle,
+it will again drive the local bus and control lines.\n</string>
+
+    <string name="describe21"> S2, S1, S0 (O): Status Pins  [PIN 28, PIN 27, PIN 26]\n
+These pins are active during T4, T1 and T2 states and is returned to passive state
+        (1,1,1 during T3 or Tw (when ready is inactive).\n
+These are used by the 8288 bus controller to generate all memory and I/O operation) access control signals.\n
+Any change by S2, S1, S0 during T4 is used to indicate the beginning of a bus cycle.\n
+These status lines are encoded as shown in the table below.\n
+\n
+S2\t S1\t S0\t	Characteristics\n
+0\t	0\t	0\t	Interrupt acknowledge\n
+0\t	0\t	1\t	Read I/O port\n
+0\t	1\t	0\t	Write I/O port\n
+0\t	1\t	1\t	Halt\n
+1\t	0\t	0\t	Code access\n
+1\t 0\t 1\t Read memory\n
+1\t	1\t	0\t	Write memory\n
+1\t	1\t	1\t	Passive State\n</string>
+
+    <string name="describe22"> QS0, QS1 (O): Queue – Status  [PIN 25, PIN 24]
+Queue Status is valid during the clock cycle after which the queue operation is performed.
+QS0, QS1 provide status to allow external tracking of the internal 8086 instruction queue.
+The condition of queue status is shown below.\n
+\n
+Queue status allows external devices like In-circuit Emulators or
+        special instruction set extension co-processors to track the CPU instruction execution.\n
+Since instructions are executed from the 8086 internal queue,
+        the queue status is presented each CPU clock cycle and is not related to the bus cycle activity.\n
+This mechanism allows:\n
+(1) A processor to detect execution of a ESCAPE instruction which directs the co- processor to perform a specific task.\n
+(2) An in-circuit Emulator to trap execution of a specific memory location.\n
+\n
+QS1\t	QS0\t	Characteristics\n
+0\t	0\t	No operation\n
+0\t	1\t	First byte of opcode from queue\n
+1\t	0\t	Empty the queue\n
+1\t	1\t	Subsequent byte from queue.\n</string>
+
+    <string name="describe23"> LOCK (O): LOCK  [PIN 29]\n
+It indicates to another system bus master, not to gain control of the system bus while LOCK is active Low.\n
+The LOCK signal is activated by the "LOCK" prefix instruction and remains active until the completion of the instruction.\n
+This signal is active Low and floats to tri-state OFF during \'hold acknowledge\'.\n
+\n
+Example:\n
+\n
+LOCK XCHG reg., Memory  ; Register is any register and memory GT0\n
+                        ; is the address of the semaphore.\n
+</string>
+
+    <string name="describe24"> RQ/GT0 and RQ/GT1 (I/O): Request/Grant  [PIN 31, PIN 30]\n
+These pins are used by other processors in a multi processor organization.\n
+ Local bus masters of other processors force the processor to release\n
+ the local bus at the end of the processors current bus cycle.\n
+ Each pin is bi-directional and has an internal pull up resistors.\n
+ Hence they may be left un-connected.\n </string>
+
+    <string name="describe25"> Vss (GND): [PIN 1, PIN 20]\n
+These pins are used as the GND pins of the 8086 microprocessor.\n
+</string>
+
+    <string name="describe26"> Vcc (Vcc): [PIN 40]\n
+This pin is used as the VCC pin of the 8086 microprocessor.\n</string>
+
+
+    </resources>

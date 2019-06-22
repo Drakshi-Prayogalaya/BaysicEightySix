@@ -3,8 +3,8 @@ package com.grape.basic8086;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
 //import com.purplebrain.adbuddiz.sdk.AdBuddiz;
 

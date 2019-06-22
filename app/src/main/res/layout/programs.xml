@@ -70,12 +70,11 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
                 </RelativeLayout>
+
             </HorizontalScrollView>
 
-
-
-
         </RelativeLayout>
+
     </ScrollView>
 
 </RelativeLayout>

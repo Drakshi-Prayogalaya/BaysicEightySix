@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.grape.basic8086.activity.FriendsFragment">
+    tools:context="com.grape.basic8086.fragment.ExperimentsFragment">
 
     <!-- <TextView
          android:layout_below="@id/label"
@@ -552,6 +552,7 @@
                 android:textColor="@color/colorPrimary"/>
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

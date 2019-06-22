@@ -22,7 +22,7 @@
                 android:id="@+id/textViewDescription"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="@dimen/textsize_small"/>
+                android:textSize="@dimen/text_size"/>
         </RelativeLayout>
 
     </ScrollView>

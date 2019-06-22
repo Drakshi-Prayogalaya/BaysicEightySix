@@ -5,14 +5,13 @@
     android:orientation="vertical"
     tools:context="com.grape.basic8086.fragment.HomeFragment">
 
-
     <TextView
         android:id="@+id/label"
         android:layout_marginTop="20dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:text="BASIC 8086"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
@@ -22,7 +21,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textsize_xlarge"
+        android:textSize="@dimen/text_size"
         android:gravity="center_horizontal"
         android:text="This app contains 47 basic application \nprograms for 8086 micro-processor.\n\nThe codes are READY TO BAKE."
         android:layout_centerVertical="true"

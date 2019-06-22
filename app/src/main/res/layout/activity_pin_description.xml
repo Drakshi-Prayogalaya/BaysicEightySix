@@ -19,7 +19,7 @@
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
                         android:text=""
-                        android:textSize="@dimen/textsize_medium"
+                        android:textSize="@dimen/text_size"
                         android:textColor="@color/navigationBarColor"
                         android:layout_marginLeft="10dp"
                         android:layout_marginStart="10dp"

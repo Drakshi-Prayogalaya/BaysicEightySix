@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.grape.basic8086.activity.AboutUsFragment">
+    tools:context="com.grape.basic8086.fragment.AboutUsFragment">
 
     <TextView
         android:layout_centerInParent="true"

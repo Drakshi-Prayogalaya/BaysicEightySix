@@ -7,8 +7,7 @@
         android:layout_height="fill_parent"
         android:id="@+id/scrollView"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_centerHorizontal="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,7 +25,7 @@
                 android:layout_marginRight="8dp"
                 android:textSize="@dimen/textsize_large"/>
         </RelativeLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </RelativeLayout>

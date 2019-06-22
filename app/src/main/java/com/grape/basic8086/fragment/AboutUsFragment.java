@@ -1,14 +1,10 @@
 package com.grape.basic8086.fragment;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.grape.basic8086.MainActivity;
+import androidx.fragment.app.Fragment;
 import com.grape.basic8086.R;
 
 /**
@@ -35,18 +31,4 @@ public class AboutUsFragment extends Fragment {
         // Inflate the layout for this fragment
         return rootView;
     }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        //Intent i = new Intent(, MainActivity.class);
-        //startActivity(i);
-    }
 }
-
-

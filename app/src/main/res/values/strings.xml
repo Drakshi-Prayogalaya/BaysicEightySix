@@ -440,7 +440,7 @@ MOV AL, 00000111b
 XOR AL, 00000010b \u0009\u0009\u0009\u0009; AL = 00000101b
 RET"</string>
 
-    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="ascii">";ASCII adjustment instructions
 
 .MODEL SMALL

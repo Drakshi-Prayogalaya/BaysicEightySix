@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.grape.basic8086.activity.FriendsFragment">
+    tools:context="com.grape.basic8086.fragment.ExperimentsFragment">
 
     <!-- <TextView
          android:layout_below="@id/label"
@@ -31,12 +31,10 @@
                 android:layout_height="wrap_content"
                 android:onClick="pro1"
                 android:text="Add 2 words"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:background="#FFFFFF"
-                android:textColor="@color/colorPrimary"
-                />
+                android:textColor="@color/colorPrimary"/>
 
             <Button
                 android:id="@+id/button2"
@@ -44,11 +42,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro2"
                 android:text="Add 2 bytes"
-
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -57,10 +52,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro3"
                 android:text="Multiply 2 words"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -69,10 +62,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro4"
                 android:text="Add 2 bytes with carry"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -80,10 +71,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro5"
                 android:text="Add bytes in memory"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -91,10 +80,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro6"
                 android:text="Add 2 bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -102,10 +89,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro7"
                 android:text="Add n bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -124,10 +109,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro9"
                 android:text="Add 2 double words"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -135,10 +118,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro10"
                 android:text="Add 2 8-bit BCD numbers"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -146,10 +127,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro11"
                 android:text="Add 2 16-bit BCD numbers"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -157,10 +136,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro12"
                 android:text="Square a number"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -168,10 +145,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro13"
                 android:text="Cube a number"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -179,10 +154,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro14"
                 android:text="Byte transfer"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -190,10 +163,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro15"
                 android:text="Swap memory contents"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -201,10 +172,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro16"
                 android:text="Division of 2 bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -223,10 +192,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro18"
                 android:text="Largest of n bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -234,10 +201,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro19"
                 android:text="Smallest of n bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -245,10 +210,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro20"
                 android:text="Factorial of a number"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -267,10 +230,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro22"
                 android:text="Average of 2 words"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -278,10 +239,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro23"
                 android:text="Separate even and odd numbers"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -289,10 +248,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro24"
                 android:text="Palindrome"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -300,10 +257,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro25"
                 android:text="Ascending order"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -311,10 +266,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro26"
                 android:text="Descending order"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -322,10 +275,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro27"
                 android:text="Fibonacci series"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -333,10 +284,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro28"
                 android:text="Find a character in a string"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -344,10 +293,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro29"
                 android:text="Binary to BCD"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -355,10 +302,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro30"
                 android:text="BCD to Binary"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -366,10 +311,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro31"
                 android:text="ASCII to BCD"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -378,10 +321,8 @@
                 android:layout_height="wrap_content" android:onClick="pro32"
                 android:text="BCD to ASCII"
                 android:background="#FFFFFF"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -390,10 +331,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro33"
                 android:text="Look up table"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -402,10 +341,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro34"
                 android:text="Look up table - 2"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -414,10 +351,8 @@
                 android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro35"
                 android:text="Find GCD and LCM of 2 bytes"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -425,10 +360,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro36"
                 android:text="Add two 2x2 matrices"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -436,10 +369,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro37"
                 android:text="Multiply two matrices"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -447,10 +378,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro38"
                 android:text="Test for primeness"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -458,10 +387,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro39"
                 android:text="Count the 1's and 0's in a byte"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -469,10 +396,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro40"
                 android:text="Display string in lowercase"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -480,10 +405,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro41"
                 android:text="String concatenation"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -491,10 +414,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro42"
                 android:text="Compare 2 strings"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -502,10 +423,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro43"
                 android:text="Count the vowels in a string"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -513,10 +432,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro44"
                 android:text="Insert a character"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -524,10 +441,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro45"
                 android:text="Delete a character"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -535,10 +450,8 @@
                 android:layout_width="match_parent" android:background="#FFFFFF"
                 android:layout_height="wrap_content" android:onClick="pro46"
                 android:text="2 out of 5 code"
-                
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
             <Button
@@ -548,10 +461,10 @@
                 android:text="Replace a character in a string"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                
                 android:textColor="@color/colorPrimary"/>
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

@@ -2,12 +2,11 @@ package com.grape.basic8086;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.grape.basic8086.Adapters.InstructionAdapter;
 
 /**
@@ -24,7 +23,7 @@ public class InstructionsList extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_instructions);
 
-        listView = (ListView) findViewById(R.id.listViewInstructions);
+        listView = findViewById(R.id.listViewInstructions);
 
         instructionAdapter = new InstructionAdapter(this);
         listView.setAdapter(instructionAdapter);

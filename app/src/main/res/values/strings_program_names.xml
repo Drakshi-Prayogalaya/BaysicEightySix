@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="program_names">
+        <item>Add 2 words</item>
+        <item>Add 2 bytes</item>
+        <item>Multiply 2 words</item>
+        <item>Add 2 bytes with carry</item>
+        <item>Add bytes in memory</item>
+        <item>Add 2 bytes</item>
+        <item>Add n bytes</item>
+        <item>Add n words</item>
+        <item>Add 2 double words</item>
+        <item>Add 2 8-bit BCD numbers</item>
+        <item>Add 2 16-bit BCD numbers</item>
+        <item>Square a number</item>
+        <item>Cube a number</item>
+        <item>Byte transfer</item>
+        <item>Swap memory contents</item>
+        <item>Division of 2 bytes</item>
+        <item>Division of word by byte</item>
+        <item>Largest of n bytes</item>
+        <item>Smallest of n bytes</item>
+        <item>Factorial of a number</item>
+        <item>Average of 2 bytes</item>
+        <item>Average of 2 words</item>
+        <item>Separate even and odd numbers</item>
+        <item>Palindrome</item>
+        <item>Ascending order</item>
+        <item>Descending order</item>
+        <item>Fibonacci series</item>
+        <item>Find a character in a string</item>
+        <item>Binary to BCD</item>
+        <item>BCD to Binary</item>
+        <item>ASCII to BCD</item>
+        <item>BCD to ASCII</item>
+        <item>Look up table</item>
+        <item>Look up table - 2</item>
+        <item>Find GCD and LCM of 2 bytes</item>
+        <item>Add two 2x2 matrices</item>
+        <item>Multiply two matrices</item>
+        <item>Test for primeness</item>
+        <item>Count the 1s and 0s in a byte</item>
+        <item>Display string in lowercase</item>
+        <item>String concatenation</item>
+        <item>Compare 2 strings</item>
+        <item>Count the vowels in a string</item>
+        <item>Insert a character</item>
+        <item>Delete a character</item>
+        <item>2 out of 5 code</item>
+        <item>Replace a character in a string</item>
+    </string-array>
+</resources>

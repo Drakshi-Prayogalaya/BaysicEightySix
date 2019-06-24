@@ -65,7 +65,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 R.id.button46,
                 R.id.button47};
 
-        static String program1 = ";Add 2 numbers of word length.\n" +
+        String program1 = ";Add 2 numbers of word length.\n" +
                 "\n" +
                 "" +
                 ".model small\n" +
@@ -89,7 +89,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "bx= 0002h\n" +
                 "ax= 0003h\n";
 
-        static String program2 = ";Add 2 numbers of bytes lengths. \n" +
+        String program2 = ";Add 2 numbers of bytes lengths. \n" +
                 "\n" +
                 ".model small \n" +
                 ".data\n" +
@@ -113,7 +113,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
 
 
 
-        static String program3 = "; Multiply 2 words\n" +
+        String program3 = "; Multiply 2 words\n" +
                 "\n" +
                 ".model small \n" +
                 ".data \n" +
@@ -137,7 +137,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
 
 
 
-        static String program4 = "; Addition of 2 bytes with carry. \n" +
+        String program4 = "; Addition of 2 bytes with carry. \n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -163,7 +163,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax=111h\n";
 
 
-        static String program5 = ";Addition of 2 bytes stored in memory\n" +
+        String program5 = ";Addition of 2 bytes stored in memory\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -182,7 +182,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds: 2002  EDh  \n";
 
 
-        static String program6 = "; Addition of 2 bytes (immediate ADDressing)\n" +
+        String program6 = "; Addition of 2 bytes (immediate ADDressing)\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -200,7 +200,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "Ax=10Eh\n";
 
 
-        static String program7 = ";Addition of n bytes \n" +
+        String program7 = ";Addition of n bytes \n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -221,7 +221,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax:F6h  C=0\n";
 
 
-        static String program8 = ";Addition of n words\n" +
+        String program8 = ";Addition of n words\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -244,7 +244,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax:43F2h   C=1\n";
 
 
-        static String program9 = " ;Addition of 2 double words\n" +
+        String program9 = " ;Addition of 2 double words\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -275,7 +275,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "Sum  00002468ACFOh  \n";
 
 
-        static String program10 = ";Addition of 2 BCD numbers of bytes length\n" +
+        String program10 = ";Addition of 2 BCD numbers of bytes length\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -303,7 +303,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax   0198h\n";
 
 
-        static String program11 = " ;Addition of 2 BCD numbers of word length\n" +
+        String program11 = " ;Addition of 2 BCD numbers of word length\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -338,7 +338,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "cx  9998h\n";
 
 
-        static String program12 = ";Program to square a number\n" +
+        String program12 = ";Program to square a number\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -360,7 +360,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax  0400h\n";
 
 
-        static String program13 = ";Program to cube a number\n" +
+        String program13 = ";Program to cube a number\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -384,7 +384,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 8000h\n";
 
 
-        static String program14 = ";Program to transfer n bits of data from one location to another\n" +
+        String program14 = ";Program to transfer n bits of data from one location to another\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -409,7 +409,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds: 4000  01  02  03  04  05\n";
 
 
-        static String program15 = ";Program to swap contents\n" +
+        String program15 = ";Program to swap contents\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -441,7 +441,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds:0014  01  02  03  04  05\n";
 
 
-        static String program16 = ";Division of 2 bytes\n" +
+        String program16 = ";Division of 2 bytes\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -464,7 +464,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 0206h\n";
 
 
-        static String program17 = ";Division  of a word by a byte\n" +
+        String program17 = ";Division  of a word by a byte\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -487,7 +487,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx 0003h\n";
 
 
-        static String program18 = ";Program to find largest of n bytes\n" +
+        String program18 = ";Program to find largest of n bytes\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -508,7 +508,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax: 00EFh\n";
 
 
-        static String program19 = ";Program to find smallest of n bytes\n" +
+        String program19 = ";Program to find smallest of n bytes\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -529,7 +529,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax:0002h\n";
 
 
-        static String program20 = ";Factorial of a number\n" +
+        String program20 = ";Factorial of a number\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -553,7 +553,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 0078h\n";
 
 
-        static String program21 = ";Average of 2 bytes\n" +
+        String program21 = ";Average of 2 bytes\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -582,7 +582,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx  0000h\n";
 
 
-        static String program22 = ";Average of 2 words\n" +
+        String program22 = ";Average of 2 words\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -604,7 +604,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx  0001h\n";
 
 
-        static String program23 = "; To separate even and odd numbers in array of N bytes.\n" +
+        String program23 = "; To separate even and odd numbers in array of N bytes.\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -636,7 +636,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds:2008 23 3F 25 2F 33 35\n";
 
 
-        static String program24 = " ;Program  to  check  if  string  is  palindrome  or  not\n" +
+        String program24 = " ;Program  to  check  if  string  is  palindrome  or  not\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -688,7 +688,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "String is  not palindrome \n";
 
 
-        static String program25 = ";Program  to  arrange  16  bit  unsigned  number in ascending  order\n" +
+        String program25 = ";Program  to  arrange  16  bit  unsigned  number in ascending  order\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -722,7 +722,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "0014 0038  0052  0068\n";
 
 
-        static String program26 = " ; Program to sort an array in descending order\n" +
+        String program26 = " ; Program to sort an array in descending order\n" +
                 "\n" +
                 ".model  small\n" +
                 ".stack\n" +
@@ -754,7 +754,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "79  65  45  12\n";
 
 
-        static String program27 = "; Program  to  display  Fibonacci  series\n" +
+        String program27 = "; Program  to  display  Fibonacci  series\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -788,7 +788,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "0005  0008  000D  0015  0015 \n";
 
 
-        static String program28 = ";Program  to  search  a  character  in  a  string\n" +
+        String program28 = ";Program  to  search  a  character  in  a  string\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -816,7 +816,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "bx   IIIIh\n";
 
 
-        static String program29 = " ; To convert  data  from  binary  to  BCD\n" +
+        String program29 = " ; To convert  data  from  binary  to  BCD\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -838,7 +838,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax  0507\n";
 
 
-        static String program30 = " ;To  convert  data  from  BCD  to  binary\n" +
+        String program30 = " ;To  convert  data  from  BCD  to  binary\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -857,7 +857,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 0027h\n";
 
 
-        static String program31 = "; To  convert  data  from  ASCII  to  BCD\n" +
+        String program31 = "; To  convert  data  from  ASCII  to  BCD\n" +
                 "\n" +
                 ".model  small\n" +
                 ".code\n" +
@@ -875,7 +875,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 0063\n";
 
 
-        static String program32 = ";To  convert  data  from  BCD  to  ASCII\n" +
+        String program32 = ";To  convert  data  from  BCD  to  ASCII\n" +
                 "\n" +
                 ".model small\n" +
                 ".code\n" +
@@ -890,7 +890,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax  3132\n";
 
 
-        static String program33 = " ; To  find  square  of  number  using  look  up  table\n" +
+        String program33 = " ; To  find  square  of  number  using  look  up  table\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -909,7 +909,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax  0031h\n";
 
 
-        static String program34 = " ;To  find 7 segment  equivalent  to  BCD  number  using  look  up  table\n" +
+        String program34 = " ;To  find 7 segment  equivalent  to  BCD  number  using  look  up  table\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -928,7 +928,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ax 005Bh\n";
 
 
-        static String program35 = ";To find  GCD  and  LCM  of  2  bytes\n" +
+        String program35 = ";To find  GCD  and  LCM  of  2  bytes\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -965,7 +965,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds: 2008  04  \n";
 
 
-        static String program36 = ";To add two  2x2 matrices\n" +
+        String program36 = ";To add two  2x2 matrices\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -995,7 +995,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds:2000  02  04  06  08\n";
 
 
-        static String program37 = ";To  find  the  product  of 2 matrices\n" +
+        String program37 = ";To  find  the  product  of 2 matrices\n" +
                 "\n" +
                 "ASSUME  CS:code,DS:data\n" +
                 "data  segment\n" +
@@ -1040,7 +1040,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "32  1A\n";
 
 
-        static String program38 = ";To  check  whether  a  number  is  prime  or  not\n" +
+        String program38 = ";To  check  whether  a  number  is  prime  or  not\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1067,7 +1067,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "output: \n" +
                 "dx AAAA\n";
 
-        static String program39 = " ;To  count  number  of  1's  and 0's  in  given  data\n" +
+        String program39 = " ;To  count  number  of  1's  and 0's  in  given  data\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1097,7 +1097,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx  0305\n";
 
 
-        static String program40 = " ;To  display  string  in lowercase \n" +
+        String program40 = " ;To  display  string  in lowercase \n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1143,7 +1143,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "qwerty\n";
 
 
-        static String program41 = " ;To concatenate  two  strings\n" +
+        String program41 = " ;To concatenate  two  strings\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -1176,7 +1176,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "friends  forever\n";
 
 
-        static String program42 = ";To  compare  two  strings\n" +
+        String program42 = ";To  compare  two  strings\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1214,7 +1214,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "strings  are  equal\n";
 
 
-        static String program43 = ";To  find  number  of  vowels  in  a  string\n" +
+        String program43 = ";To  find  number  of  vowels  in  a  string\n" +
                 "\n" +
                 ".model small\n" +
                 ".data\n" +
@@ -1251,7 +1251,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx  0003\n";
 
 
-        static String program44 = ";Program  to  insert  a  character\n" +
+        String program44 = ";Program  to  insert  a  character\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1289,7 +1289,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "mango\n";
 
 
-        static String program45 = ";Program  to  delete  a  character\n" +
+        String program45 = ";Program  to  delete  a  character\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +
@@ -1323,7 +1323,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "ds:0012  6D  6I 6E  6F  mano\n";
 
 
-        static String program46 = ";Check  whether  a  given  byte  is  2  out of 5  code  or not.\n" +
+        String program46 = ";Check  whether  a  given  byte  is  2  out of 5  code  or not.\n" +
                 "\n" +
                 ".model  small\n" +
                 ".code\n" +
@@ -1348,7 +1348,7 @@ public class ExperimentsFragment extends Fragment implements View.OnClickListene
                 "dx FFFF\n";
 
 
-        static String program47 = ";Program to  replace  a  character  in  the  string\n" +
+        String program47 = ";Program to  replace  a  character  in  the  string\n" +
                 "\n" +
                 ".model  small\n" +
                 ".data\n" +

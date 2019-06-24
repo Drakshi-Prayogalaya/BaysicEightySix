@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pins">
+        <item>AD0-AD15</item>
+        <item>A19/S6, A18/S5, A17/S4, A16/S3</item>
+        <item>S6</item>
+        <item>S3 and S4</item>
+        <item>BHE/S7</item>
+        <item>RD</item>
+        <item>TEST</item>
+        <item>INTR</item>
+        <item>NMI</item>
+        <item>Reset</item>
+        <item>Ready</item>
+        <item>CLK</item>
+        <item>MN/MX</item>
+        <item>M/IO</item>
+        <item>WR</item>
+        <item>INTA</item>
+        <item>ALE</item>
+        <item>D T/R</item>
+        <item>DEN</item>
+        <item>HOLD and HLDA</item>
+        <item>S2, S1 and S0</item>
+        <item>QS0 and QS1</item>
+        <item>LOCK</item>
+        <item>RQ/GT0 and RQ/GT1</item>
+        <item>Vss</item>
+        <item>Vcc</item>
+    </string-array>
+</resources>

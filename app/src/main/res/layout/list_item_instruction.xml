@@ -11,6 +11,6 @@
     <TextView
         android:id="@+id/textViewInstruction"
         android:text=""
-        style="@style/ListItemStyle"/>
+        style="@style/list_item_style"/>
 
 </LinearLayout>

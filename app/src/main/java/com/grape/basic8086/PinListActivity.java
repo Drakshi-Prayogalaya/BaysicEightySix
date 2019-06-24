@@ -2,48 +2,27 @@ package com.grape.basic8086;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-//import com.purplebrain.adbuddiz.sdk.AdBuddiz;
+import com.grape.basic8086.Adapters.PinAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Kbhargav on 4/21/2016.
  */
 public class PinListActivity extends AppCompatActivity implements View.OnClickListener
 {
-    Button b[] = new Button[26];
-    TextView tv;
-    int button_id[] = {R.id.button1,
-            R.id.button2,
-            R.id.button3,
-            R.id.button4,
-            R.id.button5,
-            R.id.button6,
-            R.id.button7,
-            R.id.button8,
-            R.id.button9,
-            R.id.button10,
-            R.id.button11,
-            R.id.button12,
-            R.id.button13,
-            R.id.button14,
-            R.id.button15,
-            R.id.button16,
-            R.id.button17,
-            R.id.button18,
-            R.id.button19,
-            R.id.button20,
-            R.id.button21,
-            R.id.button22,
-            R.id.button23,
-            R.id.button24,
-            R.id.button25,
-            R.id.button26};
+    PinAdapter pinAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -51,15 +30,43 @@ public class PinListActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pin_list);
 
-        tv = (TextView)findViewById(R.id.textView1);
-        for(int i = 0;i < 26;i++)
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_pins);
+        EditText etSearchPins = findViewById(R.id.et_pins);
+
+        pinAdapter = new PinAdapter(this.getResources().getStringArray(R.array.pins));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(pinAdapter);
+
+        etSearchPins.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                filter(editable.toString());
+            }
+        });
+    }
+
+    private void filter(String enteredString) {
+        ArrayList<String> filteredEntries = new ArrayList<>();
+        for(String s : this.getResources().getStringArray(R.array.pins))
         {
-            b[i] = (Button)findViewById(button_id[i]);
+            if(s.trim().toLowerCase().contains(enteredString.trim().toLowerCase()))
+            {
+                filteredEntries.add(s);
+            }
         }
 
-        //AdBuddiz.cacheAds(this);
-
-        //AdBuddiz.showAd(this);
+        pinAdapter.filterList(filteredEntries);
     }
 
     @Override

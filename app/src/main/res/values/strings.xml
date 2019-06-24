@@ -3707,7 +3707,7 @@ BHE is Low during T1 state of read, write and interrupt acknowledge cycles
         when a byte is to be transferred on the high portion of the bus.\n
 The S7 status information is available during T2, T3 and T4 states.\n
 The signal is active Low and floats to 3-state during "hold" state.\n
-his pin is Low during T1 state for the first interrupt acknowledge cycle.\n</string>
+This pin is Low during T1 state for the first interrupt acknowledge cycle.\n</string>
 
     <string name="describe6"> RD (O): READ  [PIN 32]\n
 The Read strobe indicates that the processor is performing a memory or I/O read cycle.\n

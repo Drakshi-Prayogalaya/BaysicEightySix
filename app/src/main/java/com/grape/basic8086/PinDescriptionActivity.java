@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-//import com.purplebrain.adbuddiz.sdk.AdBuddiz;
 
 /**
  * Created by Kbhargav on 4/21/2016.
@@ -25,7 +22,7 @@ public class PinDescriptionActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pin_description);
 
-        tv = (TextView)findViewById(R.id.textView1);
+        tv = findViewById(R.id.textView1);
 
         Intent i = getIntent();
         String pinName = i.getStringExtra("pin_name");

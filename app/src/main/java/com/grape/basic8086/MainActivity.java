@@ -20,13 +20,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
-import com.grape.basic8086.fragment.AboutUsFragment;
-import com.grape.basic8086.fragment.ExperimentsFragment;
 import com.grape.basic8086.fragment.HomeFragment;
+import com.grape.basic8086.fragment.ProgramsListFragment;
+import com.grape.basic8086.fragment.AboutUsFragment;
 
 import java.util.List;
 import java.util.Random;
-//import com.purplebrain.//Adbuddiz.sdk.//Adbuddiz;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
@@ -85,8 +84,8 @@ public class MainActivity extends AppCompatActivity
                     if (frag != null)
                     {
                         Log.d("tag1", "FragmentManager.getFragments: " + frag.getTag() + ": " + frag.getClass().getSimpleName());
-                        if(frag.getClass().getSimpleName().equals("ExperimentsFragment") ||
-                                frag.getClass().getSimpleName().equals("AboutUsFragment"))
+                        if(frag.getClass().getSimpleName().equals("AboutUsFragment") ||
+                                frag.getClass().getSimpleName().equals("ProgramsListFragment"))
                         {
                             Fragment homeFragment = new HomeFragment();
                             setFragment(homeFragment);
@@ -177,13 +176,12 @@ public class MainActivity extends AppCompatActivity
             fragment = new HomeFragment();
             title = "Home";
         }
-        else if (id == R.id.menu_programs)
+        else if (id == R.id.menu_programs_list)
         {
             closeDrawerLayout();
             setTimeDelay(200);
-            fragment = new ExperimentsFragment();
+            fragment = new ProgramsListFragment();
             title = "Programs";
-            ////Adbuddiz.showAd(this);
         }
         else if(id == R.id.menu_instructions)
         {
@@ -191,7 +189,6 @@ public class MainActivity extends AppCompatActivity
             setTimeDelay(200);
             Intent i = new Intent(MainActivity.this,InstructionsList.class);
             startActivity(i);
-            ////Adbuddiz.showAd(this);
         }
         else if(id == R.id.menu_pinout)
         {

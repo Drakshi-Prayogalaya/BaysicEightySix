@@ -10,45 +10,45 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.grape.basic8086.Programs;
+import com.grape.basic8086.R;
+
 import java.util.Arrays;
 import java.util.List;
 
-import com.grape.basic8086.PinDescriptionActivity;
-import com.grape.basic8086.R;
-
-public class PinAdapter extends RecyclerView.Adapter<PinAdapter.ViewHolder>
+public class ProgramsListAdapter extends RecyclerView.Adapter<ProgramsListAdapter.ViewHolder>
 {
-    private List<String> pins;
+    private List<String> programNames;
 
-    public PinAdapter(List<String> pins)
+    public ProgramsListAdapter(List<String> programNames)
     {
-        this.pins = pins;
+        this.programNames = programNames;
     }
 
-    public PinAdapter(String[] pinStringArray)
+    public ProgramsListAdapter(String[] programsListStringArray)
     {
-        this.pins = Arrays.asList(pinStringArray);
+        this.programNames = Arrays.asList(programsListStringArray);
     }
 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem = layoutInflater.inflate(R.layout.list_item_pin, parent, false);
+        View listItem = layoutInflater.inflate(R.layout.list_item_program_name, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        final String pin = pins.get(position);
-        holder.button.setText(pin);
+        final String programName = programNames.get(position);
+        holder.button.setText(programName);
         holder.button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();
-                Intent intent = new Intent(context, PinDescriptionActivity.class);
-                intent.putExtra("pin_name", pins.get(position));
+                Intent intent = new Intent(context, Programs.class);
+                intent.putExtra("program_name", programNames.get(position));
                 context.startActivity(intent);
             }
         });
@@ -56,12 +56,12 @@ public class PinAdapter extends RecyclerView.Adapter<PinAdapter.ViewHolder>
 
     @Override
     public int getItemCount() {
-        return pins.size();
+        return programNames.size();
     }
 
     public void filterList(List<String> filteredEntries)
     {
-        this.pins = filteredEntries;
+        this.programNames = filteredEntries;
         notifyDataSetChanged();
     }
 
@@ -71,7 +71,7 @@ public class PinAdapter extends RecyclerView.Adapter<PinAdapter.ViewHolder>
         ViewHolder(View itemView)
         {
             super(itemView);
-            button = itemView.findViewById(R.id.button_pin);
+            button = itemView.findViewById(R.id.button_program_name);
         }
     }
 }

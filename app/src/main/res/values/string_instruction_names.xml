@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="instruction_names">
+        <item>AAA</item>
+        <item>AAD</item>
+        <item>AAM</item>
+        <item>AAS</item>
+        <item>ADC/ADD</item>
+        <item>AND/OR/NOT/XOR</item>
+        <item>CALL</item>
+        <item>CBW/CWD</item>
+        <item>CLC/STC</item>
+        <item>CLD/STD</item>
+        <item>CLI/STI</item>
+        <item>CMC</item>
+        <item>CMP</item>
+        <item>CMPS/CMPSB/CMPSW</item>
+        <item>DAA</item>
+        <item>DAS</item>
+        <item>DIV/IDIV</item>
+        <item>ESC</item>
+        <item>HLT</item>
+        <item>IN/OUT</item>
+        <item>INC/DEC</item>
+        <item>INT/INTO</item>
+        <item>IRET</item>
+        <item>Jumps</item>
+        <item>LAHF/SAHF</item>
+        <item>LDS/LES</item>
+        <item>LEA</item>
+        <item>LOCK</item>
+        <item>LODS/LODSB/LODSW</item>
+        <item>Loops</item>
+        <item>MOV</item>
+        <item>MOVS/MOVSB/MOVSW</item>
+        <item>MUL/IMUL</item>
+        <item>NEG</item>
+        <item>NOP</item>
+        <item>POP/POPF</item>
+        <item>PUSH/PUSHF</item>
+        <item>RCL/RCR</item>
+        <item>REPs</item>
+        <item>RET/RETF</item>
+        <item>ROL/ROR</item>
+        <item>SAL/SHL</item>
+        <item>SAR/SHR</item>
+        <item>SCAS/SCASB/SCASW</item>
+        <item>STOS/STOSB/STOSW</item>
+        <item>SUB/SBB</item>
+        <item>TEST/WAIT</item>
+        <item>XCHG</item>
+        <item>XLAT/XLATB</item>
+    </string-array>
+</resources>

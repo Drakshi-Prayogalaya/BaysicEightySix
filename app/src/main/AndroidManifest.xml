@@ -40,7 +40,7 @@
         </activity>
 
         <activity
-            android:name=".InstructionsList"
+            android:name=".InstructionsListActivity"
             android:theme="@style/AppTheme"
             android:label="@string/instruction_set"
             android:windowSoftInputMode="stateHidden">

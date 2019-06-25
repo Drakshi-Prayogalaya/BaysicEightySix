@@ -1,6 +1,5 @@
 package com.grape.basic8086;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -13,24 +12,21 @@ import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 
-//import com.fgl.enhance.connector.FGLConnector;
-//import com.purplebrain.//Adbuddiz.sdk.//Adbuddiz;
-//import com.purplebrain.//Adbuddiz.sdk.//AdbuddizLogLevel;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by kbhargav on 12/15/2015.
  */
 public class Programs extends AppCompatActivity
 {
-    Button b1;
-    TextView tv,tva;
+    TextView tvProgramName, tvProgram;
     RelativeLayout rela1;
 
     @ColorInt static final int darkGreen = 0xFF1B5E20;
@@ -43,43 +39,267 @@ public class Programs extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.programs);
 
-        final Activity activity = this;
-        //Adbuddiz.setLogLevel(//AdbuddizLogLevel.Info);    // log level
-        //Adbuddiz.setPublisherKey(AdKey.//AdbuddizKey); // replace with your app publisher key
-        //Adbuddiz.cacheAds(activity);
-        //Adbuddiz.showAd(this); //FGLConnector.showInterstitialAd();
+        tvProgram = findViewById(R.id.textView3);
+        tvProgramName = findViewById(R.id.textView1);
 
-        //TextView tv,tva;
-
-        tv = (TextView)findViewById(R.id.textView3);
-        tva = (TextView)findViewById(R.id.textView1);
-
-        rela1 = (RelativeLayout) findViewById(R.id.relalay1);
+        rela1 = findViewById(R.id.relalay1);
         rela1.setVisibility(View.GONE);
-        tva.setVisibility(View.GONE);
+        tvProgramName.setVisibility(View.GONE);
 
         String fontpath = "fonts/Quattrocento-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getAssets(), fontpath);
 
-        tv.setTypeface(tf);
-        tva.setTypeface(tf);
+        tvProgram.setTypeface(tf);
+        tvProgramName.setTypeface(tf);
 
-        b1 = (Button)findViewById(R.id.button1);
-        final Intent i = getIntent();
+        Intent i = getIntent();
+        String programName = i.getStringExtra("program_name");
+        List<String> programNames = Arrays.asList(this.getResources().getStringArray(R.array.program_names));
+        int index = programNames.indexOf(programName);
+        title = programName;
 
-        if(i.hasExtra("c"))
+        switch(index)
         {
-            tv = (TextView)findViewById(R.id.textView3);
-            tva = (TextView)findViewById(R.id.textView1);
-            program = i.getStringExtra("c");
-            title = i.getStringExtra("d");
-
-            tv.setText(program);
-            tva.setText(title);
-            //Adbuddiz.cacheAds(this);
+            case 0:
+                tvProgramName.setText(programName);
+                program = ProgramData.program1;
+                tvProgram.setText(program);
+                break;
+            case 1:
+                tvProgramName.setText(programName);
+                program = ProgramData.program2;
+                tvProgram.setText(program);
+                break;
+            case 2:
+                tvProgramName.setText(programName);
+                program = ProgramData.program3;
+                tvProgram.setText(program);
+                break;
+            case 3:
+                tvProgramName.setText(programName);
+                program = ProgramData.program4;
+                tvProgram.setText(program);
+                break;
+            case 4:
+                tvProgramName.setText(programName);
+                program = ProgramData.program5;
+                tvProgram.setText(program);
+                break;
+            case 5:
+                tvProgramName.setText(programName);
+                program = ProgramData.program6;
+                tvProgram.setText(program);
+                break;
+            case 6:
+                tvProgramName.setText(programName);
+                program = ProgramData.program7;
+                tvProgram.setText(program);
+                break;
+            case 7:
+                tvProgramName.setText(programName);
+                program = ProgramData.program8;
+                tvProgram.setText(program);
+                break;
+            case 8:
+                tvProgramName.setText(programName);
+                program = ProgramData.program9;
+                tvProgram.setText(program);
+                break;
+            case 9:
+                tvProgramName.setText(programName);
+                program = ProgramData.program10;
+                tvProgram.setText(program);
+                break;
+            case 10:
+                tvProgramName.setText(programName);
+                program = ProgramData.program11;
+                tvProgram.setText(program);
+                break;
+            case 11:
+                tvProgramName.setText(programName);
+                program = ProgramData.program12;
+                tvProgram.setText(program);
+                break;
+            case 12:
+                tvProgramName.setText(programName);
+                program = ProgramData.program13;
+                tvProgram.setText(program);
+                break;
+            case 13:
+                tvProgramName.setText(programName);
+                program = ProgramData.program14;
+                tvProgram.setText(program);
+                break;
+            case 14:
+                tvProgramName.setText(programName);
+                program = ProgramData.program15;
+                tvProgram.setText(program);
+                break;
+            case 15:
+                tvProgramName.setText(programName);
+                program = ProgramData.program16;
+                tvProgram.setText(program);
+                break;
+            case 16:
+                tvProgramName.setText(programName);
+                program = ProgramData.program17;
+                tvProgram.setText(program);
+                break;
+            case 17:
+                tvProgramName.setText(programName);
+                program = ProgramData.program18;
+                tvProgram.setText(program);
+                break;
+            case 18:
+                tvProgramName.setText(programName);
+                program = ProgramData.program19;
+                tvProgram.setText(program);
+                break;
+            case 19:
+                tvProgramName.setText(programName);
+                program = ProgramData.program20;
+                tvProgram.setText(program);
+                break;
+            case 20:
+                tvProgramName.setText(programName);
+                program = ProgramData.program21;
+                tvProgram.setText(program);
+                break;
+            case 21:
+                tvProgramName.setText(programName);
+                program = ProgramData.program22;
+                tvProgram.setText(program);
+                break;
+            case 22:
+                tvProgramName.setText(programName);
+                program = ProgramData.program23;
+                tvProgram.setText(program);
+                break;
+            case 23:
+                tvProgramName.setText(programName);
+                program = ProgramData.program24;
+                tvProgram.setText(program);
+                break;
+            case 24:
+                tvProgramName.setText(programName);
+                program = ProgramData.program25;
+                tvProgram.setText(program);
+                break;
+            case 25:
+                tvProgramName.setText(programName);
+                program = ProgramData.program26;
+                tvProgram.setText(program);
+                break;
+            case 26:
+                tvProgramName.setText(programName);
+                program = ProgramData.program27;
+                tvProgram.setText(program);
+                break;
+            case 27:
+                tvProgramName.setText(programName);
+                program = ProgramData.program28;
+                tvProgram.setText(program);
+                break;
+            case 28:
+                tvProgramName.setText(programName);
+                program = ProgramData.program29;
+                tvProgram.setText(program);
+                break;
+            case 29:
+                tvProgramName.setText(programName);
+                program = ProgramData.program30;
+                tvProgram.setText(program);
+                break;
+            case 30:
+                tvProgramName.setText(programName);
+                program = ProgramData.program31;
+                tvProgram.setText(program);
+                break;
+            case 31:
+                tvProgramName.setText(programName);
+                program = ProgramData.program32;
+                tvProgram.setText(program);
+                break;
+            case 32:
+                tvProgramName.setText(programName);
+                program = ProgramData.program33;
+                tvProgram.setText(program);
+                break;
+            case 33:
+                tvProgramName.setText(programName);
+                program = ProgramData.program34;
+                tvProgram.setText(program);
+                break;
+            case 34:
+                tvProgramName.setText(programName);
+                program = ProgramData.program35;
+                tvProgram.setText(program);
+                break;
+            case 35:
+                tvProgramName.setText(programName);
+                program = ProgramData.program36;
+                tvProgram.setText(program);
+                break;
+            case 36:
+                tvProgramName.setText(programName);
+                program = ProgramData.program37;
+                tvProgram.setText(program);
+                break;
+            case 37:
+                tvProgramName.setText(programName);
+                program = ProgramData.program38;
+                tvProgram.setText(program);
+                break;
+            case 38:
+                tvProgramName.setText(programName);
+                program = ProgramData.program39;
+                tvProgram.setText(program);
+                break;
+            case 39:
+                tvProgramName.setText(programName);
+                program = ProgramData.program40;
+                tvProgram.setText(program);
+                break;
+            case 40:
+                tvProgramName.setText(programName);
+                program = ProgramData.program41;
+                tvProgram.setText(program);
+                break;
+            case 41:
+                tvProgramName.setText(programName);
+                program = ProgramData.program42;
+                tvProgram.setText(program);
+                break;
+            case 42:
+                tvProgramName.setText(programName);
+                program = ProgramData.program43;
+                tvProgram.setText(program);
+                break;
+            case 43:
+                tvProgramName.setText(programName);
+                program = ProgramData.program44;
+                tvProgram.setText(program);
+                break;
+            case 44:
+                tvProgramName.setText(programName);
+                program = ProgramData.program45;
+                tvProgram.setText(program);
+                break;
+            case 45:
+                tvProgramName.setText(programName);
+                program = ProgramData.program46;
+                tvProgram.setText(program);
+                break;
+            case 46:
+                tvProgramName.setText(programName);
+                program = ProgramData.program47;
+                tvProgram.setText(program);
+                break;
+            default:
+                tvProgramName.setText(" ");
+                tvProgram.setText("No Program found");
+                break;
         }
-
-        //Adbuddiz.showAd(this); //FGLConnector.showInterstitialAd();
 
         String array[] = this.getResources().getStringArray(R.array.instructions_array);
 
@@ -92,8 +312,8 @@ public class Programs extends AppCompatActivity
             if (search(array[a]+ " ", program) >= 0){
                 ss.setSpan(new CustomSpan(temp), search(array[a], program), search(array[a], program) + array[a].length(), 0);
             }
-            tv.setText(ss);
-            tv.setMovementMethod(LinkMovementMethod.getInstance());
+            tvProgram.setText(ss);
+            tvProgram.setMovementMethod(LinkMovementMethod.getInstance());
         }
 
         // newly added code to highlight the comments
@@ -115,8 +335,8 @@ public class Programs extends AppCompatActivity
             }
         }
 
-        tv.setText(ss);
-        tv.setMovementMethod(LinkMovementMethod.getInstance());
+        tvProgram.setText(ss);
+        tvProgram.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
 
@@ -129,7 +349,6 @@ public class Programs extends AppCompatActivity
     public void onBackPressed()
     {
         super.onBackPressed();
-        //Adbuddiz.showAd(this); //FGLConnector.showInterstitialAd();
     }
 
     public class CustomSpan extends ClickableSpan

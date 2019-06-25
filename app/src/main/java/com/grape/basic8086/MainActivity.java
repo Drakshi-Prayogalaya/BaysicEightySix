@@ -187,14 +187,14 @@ public class MainActivity extends AppCompatActivity
         {
             closeDrawerLayout();
             setTimeDelay(200);
-            Intent i = new Intent(MainActivity.this,InstructionsList.class);
+            Intent i = new Intent(MainActivity.this, InstructionsListActivity.class);
             startActivity(i);
         }
         else if(id == R.id.menu_pinout)
         {
             closeDrawerLayout();
             setTimeDelay(200);
-            Intent i = new Intent(MainActivity.this,PinListActivity.class);
+            Intent i = new Intent(MainActivity.this, PinListActivity.class);
             startActivity(i);
             ////Adbuddiz.showAd(this);
         }
